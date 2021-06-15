@@ -1,0 +1,7 @@
+* How to  compile
+ - gcc zipf.c rand.c test.c -lm
+
+* How to run
+ - ./a.out zipf-theata-value
+ - e.g., ./a.out zipf-theata-value
+

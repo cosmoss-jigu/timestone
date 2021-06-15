@@ -1,0 +1,17 @@
+{
+        "tree10k-aug10": [
+                {
+                        "data_structure": "tree",
+                        "runs_per_test": 1,
+                        "rlu_max_ws" : 1,
+                        "buckets" : 1,
+                        "duration" : 20000,
+                        "alg_type" : ["mvrlu"],
+                        "update_rate" : [20, 200, 800],
+                        "initial_size" : 10000,
+                        "range_size" : 20000,
+                        "zipf_dist_val" : 0,
+                        "threads" : [1, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 96]
+                }
+        ]
+}

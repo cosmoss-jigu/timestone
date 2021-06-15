@@ -1,0 +1,47 @@
+{
+        "list1k": [
+                {
+                        "data_structure": "list",
+                        "runs_per_test": 1,
+                        "rlu_max_ws" : 1,
+                        "buckets" : 1,
+                        "duration" : 30000,
+                        "alg_type" : ["mvrlu_ordo_list", "rcu_list", "rlu_list", "vlist_list", "harris_list"],
+                        "update_rate" : [200],
+                        "initial_size" : 1000,
+                        "range_size" : 2000,
+                        "zipf_dist_val" : 0,
+                        "threads" : [448, 392, 336, 280, 224, 196, 168, 140, 112, 84, 56, 28, 14, 8, 4, 1]
+                }
+        ],
+        "list10k": [
+                {
+                        "data_structure": "list",
+                        "runs_per_test": 1,
+                        "rlu_max_ws" : 1,
+                        "buckets" : 1,
+                        "duration" : 30000,
+                        "alg_type" : ["mvrlu_ordo_list", "rcu_list", "rlu_list", "vlist_list", "harris_list"],
+                        "update_rate" : [0, 20, 200, 800],
+                        "initial_size" : 10000,
+                        "range_size" : 20000,
+                        "zipf_dist_val" : 0,
+                        "threads" : [448, 392, 336, 280, 224, 196, 168, 140, 112, 84, 56, 28, 14, 8, 4, 1]
+                }
+        ],
+        "list100k": [
+                {
+                        "data_structure": "list",
+                        "runs_per_test": 1,
+                        "rlu_max_ws" : 1,
+                        "buckets" : 1,
+                        "duration" : 30000,
+                        "alg_type" : ["mvrlu_ordo_list", "rcu_list", "rlu_list", "vlist_list", "harris_list"],
+                        "update_rate" : [200],
+                        "initial_size" : 100000,
+                        "range_size" : 200000,
+                        "zipf_dist_val" : 0,
+                        "threads" : [448, 392, 336, 280, 224, 196, 168, 140, 112, 84, 56, 28, 14, 8, 4, 1]
+                }
+        ]
+}

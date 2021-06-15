@@ -1,0 +1,47 @@
+{
+        "list1k": [
+                {
+                        "data_structure": "list",
+                        "runs_per_test": 1,
+                        "rlu_max_ws" : 1,
+                        "buckets" : 1,
+                        "duration" : 10000,
+                        "alg_type" : ["timestone"],
+                        "update_rate" : [20, 200, 800],
+                        "initial_size" : 1000,
+                        "range_size" : 2000,
+                        "zipf_dist_val" : 0,
+                        "threads" : [448, 336, 224, 168, 112, 56, 28, 14, 8, 1]
+                }
+        ],
+        "list10k": [
+                {
+                        "data_structure": "list",
+                        "runs_per_test": 1,
+                        "rlu_max_ws" : 1,
+                        "buckets" : 1,
+                        "duration" : 10000,
+                        "alg_type" : ["timestone"],
+                        "update_rate" : [20, 200, 800],
+                        "initial_size" : 10000,
+                        "range_size" : 20000,
+                        "zipf_dist_val" : 0,
+                        "threads" : [448, 336, 224, 168, 112, 56, 28, 14, 8, 1]
+                }
+        ],
+        "list50k": [
+                {
+                        "data_structure": "list",
+                        "runs_per_test": 1,
+                        "rlu_max_ws" : 1,
+                        "buckets" : 1,
+                        "duration" : 10000,
+                        "alg_type" : ["timestone"],
+                        "update_rate" : [20, 200, 800],
+                        "initial_size" : 50000,
+                        "range_size" : 100000,
+                        "zipf_dist_val" : 0,
+                        "threads" : [448, 336, 224, 168, 112, 56, 28, 14, 8, 1]
+                }
+        ]
+}
