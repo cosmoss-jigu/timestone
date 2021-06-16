@@ -38,4 +38,25 @@ make
 sudo ./ut-ts --gtest_filter=cpp.btree_concurrent
 ```
 ## Contact 
-Please contact madhavakrishnan@vt.edu and changwoo@vt.edu 
+Please contact madhavakrishnan@vt.edu and changwoo@vt.edu
+
+## Citation
+```
+@inproceedings{krishnan:timestone,
+author = {Krishnan, R. Madhava and Kim, Jaeho and Mathew, Ajit and Fu, Xinwei
+and Demeri, Anthony and Min, Changwoo and Kannan, Sudarsun},
+title = {Durable Transactional Memory Can Scale with Timestone},
+year = {2020},
+isbn = {9781450371025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3373376.3378483},
+doi = {10.1145/3373376.3378483},
+booktitle = {Proceedings of the Twenty-Fifth International Conference on
+Architectural Support for Programming Languages and Operating Systems},
+pages = {335–349},
+numpages = {15},
+location = {Lausanne, Switzerland},
+series = {ASPLOS '20}
+}
+```
