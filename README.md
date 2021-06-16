@@ -38,7 +38,7 @@ make
 sudo ./ut-ts --gtest_filter=cpp.btree_concurrent
 ```
 ## Contact 
-Please contact madhavakrishnan@vt.edu and changwoo@vt.edu
+Please contact us at madhavakrishnan@vt.edu and changwoo@vt.edu
 
 ## Citation
 ```
