@@ -107,8 +107,6 @@ help: git-hooks
 	@echo '  lib++-clean            - Clean TimeStone C++ library'
 	@echo '  lib-nv-jemalloc        - Build NV Jemalloc allocator'
 	@echo '  lib-nv-jemalloc-clean  - Clean NV Jemalloc allocator'
-	@echo '  lib-makalu             - Build Makalu NVM allocator'
-	@echo '  lib-makalu-clean       - Clean Makalu NVM allocator'
 	@echo '  ordo        	        - Get ordo value of the server'
 	@echo ''
 	@echo '## Unittest targets:'
