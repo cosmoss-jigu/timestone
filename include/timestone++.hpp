@@ -276,8 +276,6 @@ class ts_persistent_ptr {
 
   ts_persistent_ptr<T> operator++(int) {
     unsigned int temp = this->index;
-    // this->index += 1;
-    // TODO: need to recheck with changwoo
     return *(this->offset + temp);
   }
 
@@ -293,10 +291,9 @@ class ts_persistent_ptr {
 
   ts_persistent_ptr<T> operator--(int) {
     unsigned int temp = this->index;
-    // this->index -= 1;
-    // TODO: need to recheck with changwoo
     return *(this->offset + temp);
   }
+
   /**
    * Assignment operator with a raw pointer
    */
@@ -321,6 +318,14 @@ class ts_persistent_ptr {
    * Member access operator
    */
   inline T *operator->() const noexcept { return deref(act_ptr); };
+
+  /**
+   * Unary address operator
+   */
+  ts_persistent_ptr<T> *operator&(ts_persistent_ptr<T> &pst_ptr) {
+	  return &pst_ptr;
+  }
+  T** operator&() {return &act_ptr;}
 
   /**
    * Raw pointer
@@ -370,8 +375,6 @@ class ts_cached_ptr {
    * Assignment operator with a raw pointer
    */
   ts_cached_ptr<T> &operator=(T *raw_ptr) noexcept {
-    //	std::cout << "ccp: raw ptr assign called for" << (void *) raw_ptr <<
-    // std::endl;
     copy_ptr = ts_persistent_ptr<T>::deref(raw_ptr);
     return *this;
   }
@@ -381,11 +384,13 @@ class ts_cached_ptr {
    */
   ts_cached_ptr<T> &operator=(void *raw_ptr) noexcept {
     T *_raw_ptr;
-
-    //	std::cout << "ccp: void ptr conv called for" << (void *) raw_ptr <<
-    // std::endl;
     _raw_ptr = reinterpret_cast<T *>(raw_ptr);
     return operator=(_raw_ptr);
+  }
+
+  T** operator=(T **raw_ptr) noexcept {
+	  copy_ptr = reinterpret_cast<T *>(raw_ptr);
+	  return raw_ptr;
   }
 
   /**
@@ -432,7 +437,7 @@ class ts_cached_ptr {
   ts_cached_ptr<T> &operator-=(std::ptrdiff_t s) = delete;
 
  private:
-  T *copy_ptr;
+  T *copy_ptr; // T entry; 
 
  private:
   template <typename X>
@@ -469,14 +474,29 @@ class ts_persistent_array : public ts_persistent_ptr<T> {
  public:
   ts_persistent_array() {
     for (auto i = 0; i < N; ++i) {
-      // _array[i] = new T;
       _array[i] = (T *)::ts_alloc(sizeof(T));
-      /* TODO: need flush?*/
       _array[i].update_index(_array[i], i);
+	  //std::cout << "i= " << i << "\t" << (void *)_array[i] << std::endl; 
     }
   }
 
-  ts_persistent_ptr<T> &operator[](int index) { return _array[index]; }
+/*  ts_persistent_ptr<T> &operator[](int index) { return _array[index]; }*/
+
+  T &operator[](int index) { 
+	  ts_persistent_ptr<T> pst_ptr = _array[index];
+	  T *raw = pst_ptr.raw();
+	  return *raw;
+  }
+
+  T *operator+(int index) {
+	  ts_persistent_ptr<T> pst_ptr = _array[index];
+	  T *raw = pst_ptr.raw();
+	  return raw;
+  }
+
+  ts_persistent_ptr<T> *operator&(ts_persistent_ptr<T> &pst_ptr) { 
+	  return ts_persistent_ptr<T>::operator&(pst_ptr); 
+  }
 
   ts_persistent_ptr<T> &operator=(T *raw_ptr) noexcept {
     return ts_persistent_ptr<T>::operator=(raw_ptr);
