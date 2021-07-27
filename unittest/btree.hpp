@@ -8,7 +8,7 @@ using namespace ts;
 #define FAN_OUT 5
 #define MAX_KEYS FAN_OUT - 1 
 #define MAX_PTRS FAN_OUT
-#define DISABLE
+//#define DEBUG
 
 class btree_node : public ts_object {
 public:
@@ -41,9 +41,11 @@ public:
 			_pp_node = &dummy->ptr[MAX_PTRS - 1];
 			*_pp_node = node;
 			root = dummy;
+#ifdef DEBUG
 			std::cout<< "dummy= " << (void *) dummy << std::endl;
 			std::cout<< "root= " << (void *) root << std::endl;
 			std::cout<< "node= " << (void *) node << std::endl;
+#endif
 	}
 
 		ts_cached_ptr<btree_node> create_node() {
@@ -90,13 +92,17 @@ public:
 			ts_cached_ptr<void*> pp_next_node;
 			int64_t key;
 
-//			std::cout << "starting from node " << node->id << std::endl; 
+#ifdef DEBUG
+			std::cout << "starting from node " << node->id << std::endl; 
+#endif
 			while(!node->is_leaf) {
 				i = 0;
 				p_num_keys = &node->num_keys[0];
 				num_keys = *p_num_keys;
-//				std::cout << "node= " << (void *) node << "\t" << "num_keys= " 
-//				<< num_keys << std::endl;
+#ifdef DEBUG
+				std::cout << "node= " << (void *) node << "\t" << "num_keys= " 
+				<< num_keys << std::endl;
+#endif
 				while (i < num_keys) {
 					p_key = &node->key[i];
 					key = *p_key;
@@ -106,9 +112,6 @@ public:
 					else
 						break;
 				}
-				/* assigning void* ptr to cached ptr
-				* void* -> btree_node* 
-				* then deref the right version of the sibling*/
 				pp_next_node = &node->ptr[i];
 				node = *pp_next_node;
 			}
@@ -125,7 +128,9 @@ public:
 			pp_root = &root->ptr[MAX_PTRS - 1];
 			_root = *pp_root; 
 			
-//			std::cout<< "_root= " << (void *) _root << std::endl;
+#ifdef DEBUG
+			std::cout<< "_root= " << (void *) _root << std::endl;
+#endif
 			leaf = get_leaf(_root, key);
 			p_num_keys = &leaf->num_keys[0];
 			num_keys = *p_num_keys;
@@ -133,7 +138,9 @@ public:
 				insert_into_leaf(leaf, key, val);
 				return true;
 			}
-		//	std::cout << " ### Leaf node split ###" << std::endl;
+#ifdef DEBUG
+			std::cout << " ### Leaf node split ###" << std::endl;
+#endif
 			new_root = split_insert_leaf(_root, leaf, key, val);
 			if (_root == new_root) {
 				return true;
@@ -141,9 +148,10 @@ public:
 			else{
 				ts_lock(pp_root);
 				*pp_root = new_root;
-			//	root->ptr[MAX_PTRS - 1] = pp_root;
-			//	std::cout << "### node split changed root ###" << std::endl;
-			//	std::cout<< "### new_root= " << (void *) new_root << " ###" <<std::endl;
+#ifdef DEBUG
+				std::cout << "### node split changed root ###" << std::endl;
+				std::cout<< "### new_root= " << (void *) new_root << " ###" << std::endl;
+#endif
 			}
 			return true;
 		}
@@ -181,34 +189,28 @@ public:
 				p_key = &leaf->key[i];
 				ts_lock(p_key);
 				*p_key = prev_key;
-			//	leaf->key[i] = p_key;
 
 				/* update the val*/
 				pp_curr_val = &leaf->ptr[i];
 				ts_lock(pp_curr_val);
 				*pp_curr_val = prev_val;
-			//	leaf->ptr[i] = pp_curr_val;
 			}
 			/* insert new key*/
 			p_key = &leaf->key[slot];
 			ts_lock(p_key);
 			*p_key = input_key;
-	//		leaf->key[slot] = p_key;
 
 			/* insert new val*/
 			_pp_val = &leaf->ptr[slot];
 			ts_lock(_pp_val);
 			*_pp_val = val;
-	//		leaf->ptr[slot] = _pp_val;
 			
 			/* update num_keys*/
 			++num_keys;
 //			ts_lock(p_num_keys);
 			*p_num_keys = num_keys;
-	//		leaf->num_keys[0] = p_num_keys;
 		}
 		
-//#ifndef DISABLE
 		ts_cached_ptr<btree_node> split_insert_leaf(ts_cached_ptr<btree_node> root, 
 				ts_cached_ptr<btree_node> leaf, int64_t input_key, char *input_val) {
 			
@@ -246,16 +248,20 @@ public:
 			 * else insert in the new leaf*/
 			if (slot < split) {
 				insert_old_leaf = true;
+#ifdef DEBUG
 			//	std::cout << "### key " << input_key << 
 			//	" will be inserted in old leaf at " << slot << " ###" 
 			//	<<std::endl;  
+#endif
 			}
 			else {
 				insert_new_leaf = true;
 				slot = slot - split;
+#ifdef DEBUG
 			//	std::cout << "### key " << input_key << 
 			//	" will be inserted in new leaf " << leaf->id << " at " 
 			//	<< slot << " ###" << std::endl;
+#endif
 			}
 			new_leaf = create_leaf();
 			if (insert_new_leaf) {
@@ -265,8 +271,6 @@ public:
 				pp_val = &new_leaf->ptr[slot];
 				*p_key = input_key;
 				*pp_val = input_val;
-				//new_leaf->key[slot] = p_key; 
-				//new_leaf->ptr[slot] = pp_val;
 				++n_keys_new;
 			}
 			/*split the old leaf before inserting the key*/
@@ -283,8 +287,6 @@ public:
 				pp_val_new = &new_leaf->ptr[j];
 				*p_key_new = key;
 				*pp_val_new = val;
-				//new_leaf->key[j] = p_key_new;
-				//new_leaf->ptr[j] = pp_val_new;
 				++n_keys_new;
 			}
 
@@ -303,46 +305,38 @@ public:
 					p_key = &leaf->key[i];
 					ts_lock(p_key);
 					*p_key = prev_key;
-					//leaf->key[i] = p_key;
 
 					/* update the val*/
 					pp_curr_val = &leaf->ptr[i];
 					ts_lock(pp_curr_val);
 					*pp_curr_val = prev_val;
-					//leaf->ptr[i] = pp_curr_val;
 				}
 				/* insert new key*/
 				p_key = &leaf->key[slot];
 				ts_lock(p_key);
 				*p_key = input_key;
-				//leaf->key[slot] = p_key;
 
 				/* insert new val*/
 				pp_val = &leaf->ptr[slot];
 				ts_lock(pp_val);
 				*pp_val = val;
-				//leaf->ptr[slot] = pp_val;
 				++num_keys;
 			}
 			p_num_keys = &leaf->num_keys[0];
 			ts_lock(p_num_keys);
 			*p_num_keys = num_keys;
-			//leaf->num_keys[0] = p_num_keys;
 
 			/* update parent for new leaf*/
 			pp_parent_new = &new_leaf->parent[0];
 			pp_parent = &leaf->parent[0];
 			parent = *pp_parent;
 			*pp_parent_new = parent;
-			//new_leaf->parent[0] = pp_parent_new;
 
 			/* update the sibling pointer of old and new leaf*/
 			pp_sibling_new = &new_leaf->ptr[MAX_PTRS - 1];
 			sibling_new = *pp_sibling;
 			*pp_sibling_new = sibling_new;
-			//new_leaf->ptr[MAX_PTRS - 1] = pp_sibling_new;
 			*pp_sibling = new_leaf;
-			//leaf->ptr[MAX_PTRS - 1] = pp_sibling;
 			
 			/* insert into parent*/
 			p_key_new = &new_leaf->key[0];
@@ -378,7 +372,6 @@ public:
 				/* update the num_keys in new node*/
 				p_num_keys_new = &right->num_keys[0];
 				*p_num_keys_new = num_keys_right;
-				//right->num_keys[0] = p_num_keys_new;
 				return _root;
 			}
 
@@ -397,42 +390,37 @@ public:
 					pp_next_node = &parent->ptr[i + 1];
 					ts_lock(pp_next_node);
 					*pp_next_node = node;
-					//parent->ptr[i + 1] = pp_next_node;
 
 					p_curr_key = &parent->key[i];
 					ts_lock(p_curr_key);
 					*p_curr_key = prev_key;
-					//parent->key[i] = p_curr_key;
 				}
 				pp_node = &parent->ptr[left_index + 1];
 				ts_lock(pp_node);
 				*pp_node = right;
-				//parent->ptr[left_index + 1] = pp_node;
 
 				p_key = &parent->key[left_index];
 				ts_lock(p_key);
 				*p_key = key;
-				//parent->key[left_index] = p_key;
 				
 				/* update the num_keys in new node*/
 				p_num_keys_new = &right->num_keys[0];
 				*p_num_keys_new = num_keys_right;
-				//right->num_keys[0] = p_num_keys_new;
 
 				++num_keys;
 				*p_num_keys = num_keys;
-				//parent->num_keys[0] = p_num_keys;
 				return root;
 			}
-			// split and create new parent 
-			//std::cout << "### parent node full.. spliting internal node ###" << std::endl;
+			// split and create new parent
+#ifdef DEBUG
+			std::cout << "### parent node full.. spliting internal node ###" << std::endl;
+#endif 
 			_root = split_insert_into_node(root, parent, 
 					left_index, p_num_keys, key, right);
 
 			/* update the num_keys in new node*/
 			p_num_keys_new = &right->num_keys[0];
 			*p_num_keys_new = num_keys_right;
-			//right->num_keys[0] = p_num_keys_new;
 			return _root;
 		}
 		
@@ -474,39 +462,32 @@ public:
 				pp_node = &old_node->ptr[i];
 				ts_lock(pp_node);
 				*pp_node = temp_ptr[i];
-				//old_node->ptr[i] = pp_node;
 
 				p_key = &old_node->key[i];
 				ts_lock(p_key);
 				*p_key = temp_key[i];
-				//old_node->key[i] = p_key;
 				++num_keys_old;
 			}
 			pp_node = &old_node->ptr[i];
 			ts_lock(pp_node);
 			*pp_node = temp_ptr[i];
-			//old_node->ptr[i] = pp_node;
 			k_prime = temp_key[split - 1];
 			/* populate the new parent*/
 			for (++i, j = 0; i < FAN_OUT; ++i, ++j) {
 					pp_node = &new_node->ptr[j];
 					*pp_node = temp_ptr[i];
-					//new_node->ptr[j] = pp_node;
 					p_key = &new_node->key[j];
 					*p_key = temp_key[i];
-					//new_node->key[j] = p_key;
 					++num_keys_new;
 			}
 			pp_node = &new_node->ptr[j];
 			*pp_node = temp_ptr[i];
-			//new_node->ptr[j] = pp_node;
 
 			/* update the parent ptr of the new node*/
 			pp_parent = &old_node->parent[0];
 			parent = *pp_parent;
 			pp_parent_new = &new_node->parent[0];
 			*pp_parent_new = parent;
-			//new_node->parent[0] = pp_parent_new; 
 
 			/* update the parent ptr in all the children 
 			 * of new_node*/
@@ -518,17 +499,15 @@ public:
 				*pp_parent = new_node;
 				//child->parent[0] = pp_parent;
 			}
-			//std::cout << "### internal node split done updating the parent ###" << std::endl;
+#ifdef DEBUG
+			std::cout << "### internal node split done updating the parent ###" << std::endl;
+#endif
 			new_root =  insert_into_parent(root, old_node, 
 					k_prime, new_node, num_keys_new);
 
 			/* update num keys in the old parent*/
 			num_keys = num_keys - num_keys_old;
-/*			p_num_keys_old = &old_node->num_keys[0];
-			*p_num_keys_old = num_keys;
-			old_node->num_keys[0] = p_num_keys_old;*/
 			*p_num_keys = num_keys;
-			//old_node->num_keys[0] = p_num_keys;
 			return new_root;
 		}
 
@@ -564,33 +543,25 @@ public:
 
 			p_key = &root->key[0];
 			*p_key = key;
-			//root->key[0] = p_key;
 			++num_keys;
 			pp_val = &root->ptr[0];
 			*pp_val = left;
-			//root->ptr[0] = pp_val;
 			pp_val = &root->ptr[1];
 			*pp_val = right;
-			//root->ptr[1] = pp_val;
 
 			p_num_keys = &root->num_keys[0];
 			*p_num_keys = num_keys;
-			//root->num_keys[0] = p_num_keys;
 			pp_parent = &root->parent[0];
 			*pp_parent = NULL;
-			//root->parent[0] = pp_parent;
 
 			pp_parent = &left->parent[0];
 			ts_lock(pp_parent);
 			*pp_parent = root;
-			//left->parent[0] = pp_parent;
 			pp_parent = &right->parent[0];
 			*pp_parent = root;
-			//right->parent[0] = pp_parent;
 			return root;
 		}
 
-//#endif
 		char* lookup(int64_t target_key) {
 			ts_cached_ptr<btree_node> _root, leaf;
 			ts_cached_ptr<void*> pp_root;
@@ -605,10 +576,10 @@ public:
 			/* use pp_root for ts_lock when modifying root pointer*/
 			pp_root = &root->ptr[MAX_PTRS - 1];
 			_root = *pp_root; 
-			
-//			_root = root->ptr[MAX_PTRS - 1];
-//			std::cout<< "_root= " << (void *) _root << std::endl;
-//			std::cout<< "lookup: target_key= " << target_key << std::endl;
+#ifdef DEBUG			
+			std::cout<< "_root= " << (void *) _root << std::endl;
+			std::cout<< "lookup: target_key= " << target_key << std::endl;
+#endif
 			leaf = get_leaf(_root, target_key);
 			p_num_keys = &leaf->num_keys[0];
 			num_keys = *p_num_keys;
@@ -619,9 +590,13 @@ public:
 					pp_val = &leaf->ptr[i];
 					_pp_val = reinterpret_pointer_cast<char *>(pp_val);
 					val = *_pp_val;
-				//	std::cout<< "read from leaf node " << leaf->id << std::endl;
-					//std::cout<< "read from leaf node " << leaf->id << " addr= " << (void *) leaf << std::endl;
-				//	std::cout<< "pos=" << i << "\t" <<"key=" << target_key << "\t" <<"val=" << val << std::endl;
+#ifdef DEBUG			
+					std::cout<< "read from leaf node " << leaf->id << std::endl;
+					std::cout<< "read from leaf node " << leaf->id << 
+						" addr= " << (void *) leaf << std::endl;
+					std::cout<< "pos=" << i << "\t" <<"key=" << target_key 
+						<< "\t" <<"val=" << val << std::endl;
+#endif
 					return val;
 				}
 			}
