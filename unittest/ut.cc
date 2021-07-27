@@ -21,7 +21,7 @@
 #define MAX_OBJ_SIZE 512
 #define KEYS 10000000
 #define MISS_BUFF 10000
-#define N_THREADS 64
+#define N_THREADS 4
 //#define BENCH_INS
 //#define PRINT
 #define DISABLE
