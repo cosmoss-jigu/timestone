@@ -1,4 +1,0 @@
-#!/bin/sh
-
-pushd $( cd "$( dirname "$( readlink "${BASH_SOURCE[0]}" )" )" && pwd )/.. > /dev/null
-make format

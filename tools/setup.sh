@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: Copyright (c) 2019-2021 Virginia Tech
+# SPDX-License-Identifier: Apache-2.0
+
 CUR_DIR=$(realpath $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/)
 source $CUR_DIR/config.sh
 

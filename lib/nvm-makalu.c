@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: Copyright (c) 2019-2021 Virginia Tech
+// SPDX-License-Identifier: Apache-2.0
+
 #ifdef TS_NVM_IS_MAKALU
 #define _GNU_SOURCE
 #include <assert.h>

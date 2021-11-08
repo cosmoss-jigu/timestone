@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: Copyright (c) 2019-2021 Virginia Tech
+// SPDX-License-Identifier: Apache-2.0
+
 #ifndef _TVLOG_H
 #define _TVLOG_H
 

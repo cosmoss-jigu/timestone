@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+# SPDX-FileCopyrightText: Copyright (c) 2018-2021 Virginia Tech
+# SPDX-License-Identifier: Apache-2.0
+
 import errno
 
 cpuinfo = [dict(map(str.strip, line.split(":", 1))
