@@ -1,0 +1,3777 @@
+####################################
+####################################
+Evaluation List 10K 
+run bench-timestone u20 num thread 1
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 1
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+Set size      : 10001 (expected: 10001)
+Set size(RLU) : 10001 (expected: 10001)
+Duration      : 10000 (ms)
+#ops          : 105238 (10523.800000 / s)
+#read ops     : 103279 (10327.900000 / s)
+#update ops   : 1959 (195.900000 / s)
+#cmt_update ops : 1323 (132.300000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 105238
+                        n_finish = 105238
+                        n_aborts = 0
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 37072
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 2
+     n_tvlog_cpobj_written_bytes = 296512
+           n_tvlog_written_bytes = 4306240
+         n_tvlog_reclaimed_bytes = 465856
+              n_tvlog_ckpt_bytes = 217248
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 724672
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 5
+       n_ckptlog_reclaimed_bytes = 117824
+       n_ckptlog_writeback_bytes = 18880
+                     n_qp_detect = 19875
+                        n_qp_nap = 19845
+-------------------------------------------------
+run bench-timestone u20 num thread 4
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 4
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+Set size      : 10000 (expected: 10000)
+Set size(RLU) : 10000 (expected: 10000)
+Duration      : 10000 (ms)
+#ops          : 336603 (33660.300000 / s)
+#read ops     : 329872 (32987.200000 / s)
+#update ops   : 6731 (673.100000 / s)
+#cmt_update ops : 4538 (453.800000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 336603
+                        n_finish = 336603
+                        n_aborts = 0
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 127064
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 8
+     n_tvlog_cpobj_written_bytes = 1016640
+           n_tvlog_written_bytes = 5437888
+         n_tvlog_reclaimed_bytes = 1597504
+              n_tvlog_ckpt_bytes = 566112
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 930432
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 20
+       n_ckptlog_reclaimed_bytes = 342080
+       n_ckptlog_writeback_bytes = 49216
+                     n_qp_detect = 19688
+                        n_qp_nap = 19661
+-------------------------------------------------
+run bench-timestone u20 num thread 8
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 8
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+Set size      : 10002 (expected: 10002)
+Set size(RLU) : 10002 (expected: 10002)
+Duration      : 10000 (ms)
+#ops          : 538427 (53842.700000 / s)
+#read ops     : 527503 (52750.300000 / s)
+#update ops   : 10924 (1092.400000 / s)
+#cmt_update ops : 7292 (729.200000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 538427
+                        n_finish = 538427
+                        n_aborts = 0
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 204232
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 16
+     n_tvlog_cpobj_written_bytes = 1633472
+           n_tvlog_written_bytes = 6407232
+         n_tvlog_reclaimed_bytes = 2566848
+              n_tvlog_ckpt_bytes = 749064
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 1106688
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 40
+       n_ckptlog_reclaimed_bytes = 493568
+       n_ckptlog_writeback_bytes = 65072
+                     n_qp_detect = 19764
+                        n_qp_nap = 19736
+-------------------------------------------------
+run bench-timestone u20 num thread 16
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 16
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+Set size      : 10006 (expected: 10006)
+Set size(RLU) : 10006 (expected: 10006)
+Duration      : 10000 (ms)
+#ops          : 874002 (87400.200000 / s)
+#read ops     : 856607 (85660.700000 / s)
+#update ops   : 17395 (1739.500000 / s)
+#cmt_update ops : 11648 (1164.800000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 874002
+                        n_finish = 874002
+                        n_aborts = 0
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 326312
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 32
+     n_tvlog_cpobj_written_bytes = 2609344
+           n_tvlog_written_bytes = 7940672
+         n_tvlog_reclaimed_bytes = 4100288
+              n_tvlog_ckpt_bytes = 952200
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 1385472
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 80
+       n_ckptlog_reclaimed_bytes = 703552
+       n_ckptlog_writeback_bytes = 82752
+                     n_qp_detect = 14758
+                        n_qp_nap = 14729
+-------------------------------------------------
+run bench-timestone u20 num thread 24
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 24
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 23
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+Set size      : 10006 (expected: 10006)
+Set size(RLU) : 10006 (expected: 10006)
+Duration      : 10000 (ms)
+#ops          : 1212631 (121263.100000 / s)
+#read ops     : 1188058 (118805.800000 / s)
+#update ops   : 24573 (2457.300000 / s)
+#cmt_update ops : 16342 (1634.200000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1212634
+                        n_finish = 1212631
+                        n_aborts = 3
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 457744
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 48
+     n_tvlog_cpobj_written_bytes = 3660800
+           n_tvlog_written_bytes = 9592960
+         n_tvlog_reclaimed_bytes = 5752576
+              n_tvlog_ckpt_bytes = 1088176
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 1685888
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 120
+       n_ckptlog_reclaimed_bytes = 899968
+       n_ckptlog_writeback_bytes = 94304
+                     n_qp_detect = 19306
+                        n_qp_nap = 19278
+-------------------------------------------------
+run bench-timestone u20 num thread 32
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 32
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 30
+Creating thread 31
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+Set size      : 10012 (expected: 10012)
+Set size(RLU) : 10012 (expected: 10012)
+Duration      : 10000 (ms)
+#ops          : 1512876 (151287.600000 / s)
+#read ops     : 1482650 (148265.000000 / s)
+#update ops   : 30226 (3022.600000 / s)
+#cmt_update ops : 20056 (2005.600000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1512881
+                        n_finish = 1512876
+                        n_aborts = 5
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 561904
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 64
+     n_tvlog_cpobj_written_bytes = 4492928
+           n_tvlog_written_bytes = 10900480
+         n_tvlog_reclaimed_bytes = 7060096
+              n_tvlog_ckpt_bytes = 1150920
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 1923584
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 160
+       n_ckptlog_reclaimed_bytes = 1040128
+       n_ckptlog_writeback_bytes = 99680
+                     n_qp_detect = 18887
+                        n_qp_nap = 18857
+-------------------------------------------------
+run bench-timestone u20 num thread 40
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 40
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+Set size      : 10013 (expected: 10013)
+Set size(RLU) : 10013 (expected: 10013)
+Duration      : 10000 (ms)
+#ops          : 1788571 (178857.100000 / s)
+#read ops     : 1752905 (175290.500000 / s)
+#update ops   : 35666 (3566.600000 / s)
+#cmt_update ops : 23773 (2377.300000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1788574
+                        n_finish = 1788571
+                        n_aborts = 3
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 666008
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 80
+     n_tvlog_cpobj_written_bytes = 5325824
+           n_tvlog_written_bytes = 12208896
+         n_tvlog_reclaimed_bytes = 8368512
+              n_tvlog_ckpt_bytes = 1215872
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 2161472
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 200
+       n_ckptlog_reclaimed_bytes = 1180096
+       n_ckptlog_writeback_bytes = 104944
+                     n_qp_detect = 19347
+                        n_qp_nap = 19318
+-------------------------------------------------
+run bench-timestone u20 num thread 48
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 48
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+Creating thread 40
+Creating thread 41
+Creating thread 42
+Creating thread 43
+Creating thread 44
+Creating thread 45
+Creating thread 46
+Creating thread 47
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+[wait for thread comp i:40 
+[wait for thread comp i:41 
+[wait for thread comp i:42 
+[wait for thread comp i:43 
+[wait for thread comp i:44 
+[wait for thread comp i:45 
+[wait for thread comp i:46 
+[wait for thread comp i:47 
+Set size      : 10015 (expected: 10015)
+Set size(RLU) : 10015 (expected: 10015)
+Duration      : 10001 (ms)
+#ops          : 2033035 (203283.171683 / s)
+#read ops     : 1992234 (199203.479652 / s)
+#update ops   : 40801 (4079.692031 / s)
+#cmt_update ops : 26941 (2693.830617 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 2033041
+                        n_finish = 2033035
+                        n_aborts = 6
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 754768
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 96
+     n_tvlog_cpobj_written_bytes = 6035520
+           n_tvlog_written_bytes = 13324096
+         n_tvlog_reclaimed_bytes = 9483712
+              n_tvlog_ckpt_bytes = 1245128
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 2364224
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 240
+       n_ckptlog_reclaimed_bytes = 1292096
+       n_ckptlog_writeback_bytes = 107616
+                     n_qp_detect = 16615
+                        n_qp_nap = 16588
+-------------------------------------------------
+run bench-timestone u20 num thread 56
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 56
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+Creating thread 40
+Creating thread 41
+Creating thread 42
+Creating thread 43
+Creating thread 44
+Creating thread 45
+Creating thread 46
+Creating thread 47
+Creating thread 48
+Creating thread 49
+Creating thread 50
+Creating thread 51
+Creating thread 52
+Creating thread 53
+Creating thread 54
+Creating thread 55
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+[wait for thread comp i:40 
+[wait for thread comp i:41 
+[wait for thread comp i:42 
+[wait for thread comp i:43 
+[wait for thread comp i:44 
+[wait for thread comp i:45 
+[wait for thread comp i:46 
+[wait for thread comp i:47 
+[wait for thread comp i:48 
+[wait for thread comp i:49 
+[wait for thread comp i:50 
+[wait for thread comp i:51 
+[wait for thread comp i:52 
+[wait for thread comp i:53 
+[wait for thread comp i:54 
+[wait for thread comp i:55 
+Set size      : 10019 (expected: 10019)
+Set size(RLU) : 10019 (expected: 10019)
+Duration      : 10000 (ms)
+#ops          : 2331079 (233107.900000 / s)
+#read ops     : 2284092 (228409.200000 / s)
+#update ops   : 46987 (4698.700000 / s)
+#cmt_update ops : 31467 (3146.700000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 2331085
+                        n_finish = 2331079
+                        n_aborts = 6
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 881608
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 112
+     n_tvlog_cpobj_written_bytes = 7049600
+           n_tvlog_written_bytes = 14917376
+         n_tvlog_reclaimed_bytes = 11076992
+              n_tvlog_ckpt_bytes = 1288000
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 2653888
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 280
+       n_ckptlog_reclaimed_bytes = 1449600
+       n_ckptlog_writeback_bytes = 110816
+                     n_qp_detect = 18272
+                        n_qp_nap = 18242
+-------------------------------------------------
+run bench-timestone u20 num thread 64
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 64
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 20
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+Creating thread 40
+Creating thread 41
+Creating thread 42
+Creating thread 43
+Creating thread 44
+Creating thread 45
+Creating thread 46
+Creating thread 47
+Creating thread 48
+Creating thread 49
+Creating thread 50
+Creating thread 51
+Creating thread 52
+Creating thread 53
+Creating thread 54
+Creating thread 55
+Creating thread 56
+Creating thread 57
+Creating thread 58
+Creating thread 59
+Creating thread 60
+Creating thread 61
+Creating thread 62
+Creating thread 63
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+[wait for thread comp i:40 
+[wait for thread comp i:41 
+[wait for thread comp i:42 
+[wait for thread comp i:43 
+[wait for thread comp i:44 
+[wait for thread comp i:45 
+[wait for thread comp i:46 
+[wait for thread comp i:47 
+[wait for thread comp i:48 
+[wait for thread comp i:49 
+[wait for thread comp i:50 
+[wait for thread comp i:51 
+[wait for thread comp i:52 
+[wait for thread comp i:53 
+[wait for thread comp i:54 
+[wait for thread comp i:55 
+[wait for thread comp i:56 
+[wait for thread comp i:57 
+[wait for thread comp i:58 
+[wait for thread comp i:59 
+[wait for thread comp i:60 
+[wait for thread comp i:61 
+[wait for thread comp i:62 
+[wait for thread comp i:63 
+Set size      : 10022 (expected: 10022)
+Set size(RLU) : 10022 (expected: 10022)
+Duration      : 10000 (ms)
+#ops          : 2561721 (256172.100000 / s)
+#read ops     : 2510762 (251076.200000 / s)
+#update ops   : 50959 (5095.900000 / s)
+#cmt_update ops : 33890 (3389.000000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 2561725
+                        n_finish = 2561721
+                        n_aborts = 4
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 949536
+             n_tvlog_best_effort = 0
+                    n_tvlog_ckpt = 128
+     n_tvlog_cpobj_written_bytes = 7592192
+           n_tvlog_written_bytes = 15770368
+         n_tvlog_reclaimed_bytes = 11929984
+              n_tvlog_ckpt_bytes = 1299776
+                 n_oplog_reclaim = 1
+           n_oplog_reclaimed_ops = 10000
+         n_oplog_reclaimed_bytes = 640000
+           n_oplog_written_bytes = 2808960
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 320
+       n_ckptlog_reclaimed_bytes = 1531392
+       n_ckptlog_writeback_bytes = 111904
+                     n_qp_detect = 10858
+                        n_qp_nap = 10829
+-------------------------------------------------
+####################################
+####################################
+Evaluation List 10K 
+run bench-timestone u200 num thread 1
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 1
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+Set size      : 10000 (expected: 10000)
+Set size(RLU) : 10000 (expected: 10000)
+Duration      : 10000 (ms)
+#ops          : 73076 (7307.600000 / s)
+#read ops     : 58375 (5837.500000 / s)
+#update ops   : 14701 (1470.100000 / s)
+#cmt_update ops : 9778 (977.800000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 73076
+                        n_finish = 73076
+                        n_aborts = 0
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 273784
+             n_tvlog_best_effort = 12
+                    n_tvlog_ckpt = 14
+     n_tvlog_cpobj_written_bytes = 2190592
+           n_tvlog_written_bytes = 7282752
+         n_tvlog_reclaimed_bytes = 3442368
+              n_tvlog_ckpt_bytes = 1581984
+                 n_oplog_reclaim = 2
+           n_oplog_reclaimed_ops = 18939
+         n_oplog_reclaimed_bytes = 1212160
+           n_oplog_written_bytes = 1265856
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 5
+       n_ckptlog_reclaimed_bytes = 863040
+       n_ckptlog_writeback_bytes = 76400
+                     n_qp_detect = 19841
+                        n_qp_nap = 19795
+-------------------------------------------------
+run bench-timestone u200 num thread 4
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 4
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+Set size      : 10001 (expected: 10001)
+Set size(RLU) : 10001 (expected: 10001)
+Duration      : 10000 (ms)
+#ops          : 220306 (22030.600000 / s)
+#read ops     : 176119 (17611.900000 / s)
+#update ops   : 44187 (4418.700000 / s)
+#cmt_update ops : 29601 (2960.100000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 220312
+                        n_finish = 220306
+                        n_aborts = 6
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 828856
+             n_tvlog_best_effort = 44
+                    n_tvlog_ckpt = 49
+     n_tvlog_cpobj_written_bytes = 6631936
+           n_tvlog_written_bytes = 14261632
+         n_tvlog_reclaimed_bytes = 10421248
+              n_tvlog_ckpt_bytes = 3472032
+                 n_oplog_reclaim = 10
+           n_oplog_reclaimed_ops = 38787
+         n_oplog_reclaimed_bytes = 2482432
+           n_oplog_written_bytes = 2534528
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 20
+       n_ckptlog_reclaimed_bytes = 2154240
+       n_ckptlog_writeback_bytes = 112992
+                     n_qp_detect = 19822
+                        n_qp_nap = 19783
+-------------------------------------------------
+run bench-timestone u200 num thread 8
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 8
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+Set size      : 10005 (expected: 10005)
+Set size(RLU) : 10005 (expected: 10005)
+Duration      : 10000 (ms)
+#ops          : 368927 (36892.700000 / s)
+#read ops     : 295067 (29506.700000 / s)
+#update ops   : 73860 (7386.000000 / s)
+#cmt_update ops : 49409 (4940.900000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 368938
+                        n_finish = 368927
+                        n_aborts = 11
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 1383592
+             n_tvlog_best_effort = 80
+                    n_tvlog_ckpt = 80
+     n_tvlog_cpobj_written_bytes = 11069888
+           n_tvlog_written_bytes = 21235520
+         n_tvlog_reclaimed_bytes = 17395136
+              n_tvlog_ckpt_bytes = 4411160
+                 n_oplog_reclaim = 15
+           n_oplog_reclaimed_ops = 55185
+         n_oplog_reclaimed_bytes = 3531840
+           n_oplog_written_bytes = 3802176
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 40
+       n_ckptlog_reclaimed_bytes = 3114688
+       n_ckptlog_writeback_bytes = 135376
+                     n_qp_detect = 19717
+                        n_qp_nap = 19679
+-------------------------------------------------
+run bench-timestone u200 num thread 16
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 16
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+Set size      : 10003 (expected: 10003)
+Set size(RLU) : 10003 (expected: 10003)
+Duration      : 10000 (ms)
+#ops          : 628658 (62865.800000 / s)
+#read ops     : 502718 (50271.800000 / s)
+#update ops   : 125940 (12594.000000 / s)
+#cmt_update ops : 83649 (8364.900000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 628710
+                        n_finish = 628658
+                        n_aborts = 52
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 2342256
+             n_tvlog_best_effort = 96
+                    n_tvlog_ckpt = 128
+     n_tvlog_cpobj_written_bytes = 18739648
+           n_tvlog_written_bytes = 33288128
+         n_tvlog_reclaimed_bytes = 29447744
+              n_tvlog_ckpt_bytes = 4971808
+                 n_oplog_reclaim = 33
+           n_oplog_reclaimed_ops = 77464
+         n_oplog_reclaimed_bytes = 4957696
+           n_oplog_written_bytes = 5993536
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 80
+       n_ckptlog_reclaimed_bytes = 4403648
+       n_ckptlog_writeback_bytes = 161984
+                     n_qp_detect = 19456
+                        n_qp_nap = 19422
+-------------------------------------------------
+run bench-timestone u200 num thread 24
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 24
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+Set size      : 10008 (expected: 10008)
+Set size(RLU) : 10008 (expected: 10008)
+Duration      : 10000 (ms)
+#ops          : 915394 (91539.400000 / s)
+#read ops     : 732134 (73213.400000 / s)
+#update ops   : 183260 (18326.000000 / s)
+#cmt_update ops : 122296 (12229.600000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 915530
+                        n_finish = 915394
+                        n_aborts = 136
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 3424512
+             n_tvlog_best_effort = 168
+                    n_tvlog_ckpt = 192
+     n_tvlog_cpobj_written_bytes = 27400704
+           n_tvlog_written_bytes = 46893568
+         n_tvlog_reclaimed_bytes = 43053184
+              n_tvlog_ckpt_bytes = 5469768
+                 n_oplog_reclaim = 58
+           n_oplog_reclaimed_ops = 106613
+         n_oplog_reclaimed_bytes = 6823232
+           n_oplog_written_bytes = 8466944
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 120
+       n_ckptlog_reclaimed_bytes = 5807424
+       n_ckptlog_writeback_bytes = 167936
+                     n_qp_detect = 18370
+                        n_qp_nap = 18335
+-------------------------------------------------
+run bench-timestone u200 num thread 32
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 32
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+Set size      : 10013 (expected: 10013)
+Set size(RLU) : 10013 (expected: 10013)
+Duration      : 10000 (ms)
+#ops          : 1160672 (116067.200000 / s)
+#read ops     : 928312 (92831.200000 / s)
+#update ops   : 232360 (23236.000000 / s)
+#cmt_update ops : 154757 (15475.700000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1160955
+                        n_finish = 1160672
+                        n_aborts = 283
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 4333560
+             n_tvlog_best_effort = 224
+                    n_tvlog_ckpt = 256
+     n_tvlog_cpobj_written_bytes = 34677888
+           n_tvlog_written_bytes = 58321536
+         n_tvlog_reclaimed_bytes = 54481152
+              n_tvlog_ckpt_bytes = 6061880
+                 n_oplog_reclaim = 90
+           n_oplog_reclaimed_ops = 141111
+         n_oplog_reclaimed_bytes = 9031104
+           n_oplog_written_bytes = 10544448
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 160
+       n_ckptlog_reclaimed_bytes = 7047936
+       n_ckptlog_writeback_bytes = 170032
+                     n_qp_detect = 17922
+                        n_qp_nap = 17885
+-------------------------------------------------
+run bench-timestone u200 num thread 40
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 40
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+Set size      : 10012 (expected: 10012)
+Set size(RLU) : 10012 (expected: 10012)
+Duration      : 10000 (ms)
+#ops          : 1399379 (139937.900000 / s)
+#read ops     : 1119323 (111932.300000 / s)
+#update ops   : 280056 (28005.600000 / s)
+#cmt_update ops : 186370 (18637.000000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1399742
+                        n_finish = 1399379
+                        n_aborts = 363
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 5218696
+             n_tvlog_best_effort = 320
+                    n_tvlog_ckpt = 320
+     n_tvlog_cpobj_written_bytes = 41759680
+           n_tvlog_written_bytes = 69450816
+         n_tvlog_reclaimed_bytes = 65610432
+              n_tvlog_ckpt_bytes = 6358856
+                 n_oplog_reclaim = 121
+           n_oplog_reclaimed_ops = 176588
+         n_oplog_reclaimed_bytes = 11301632
+           n_oplog_written_bytes = 12567680
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 200
+       n_ckptlog_reclaimed_bytes = 8156096
+       n_ckptlog_writeback_bytes = 165216
+                     n_qp_detect = 17637
+                        n_qp_nap = 17601
+-------------------------------------------------
+run bench-timestone u200 num thread 48
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 48
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+Creating thread 40
+Creating thread 41
+Creating thread 42
+Creating thread 43
+Creating thread 44
+Creating thread 45
+Creating thread 46
+Creating thread 47
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+[wait for thread comp i:40 
+[wait for thread comp i:41 
+[wait for thread comp i:42 
+[wait for thread comp i:43 
+[wait for thread comp i:44 
+[wait for thread comp i:45 
+[wait for thread comp i:46 
+[wait for thread comp i:47 
+Set size      : 10018 (expected: 10018)
+Set size(RLU) : 10018 (expected: 10018)
+Duration      : 10000 (ms)
+#ops          : 1650143 (165014.300000 / s)
+#read ops     : 1320148 (132014.800000 / s)
+#update ops   : 329995 (32999.500000 / s)
+#cmt_update ops : 219834 (21983.400000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1650633
+                        n_finish = 1650143
+                        n_aborts = 490
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 6155856
+             n_tvlog_best_effort = 336
+                    n_tvlog_ckpt = 384
+     n_tvlog_cpobj_written_bytes = 49263232
+           n_tvlog_written_bytes = 81231872
+         n_tvlog_reclaimed_bytes = 77391488
+              n_tvlog_ckpt_bytes = 6789048
+                 n_oplog_reclaim = 153
+           n_oplog_reclaimed_ops = 205872
+         n_oplog_reclaimed_bytes = 13175808
+           n_oplog_written_bytes = 14709376
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 240
+       n_ckptlog_reclaimed_bytes = 9370880
+       n_ckptlog_writeback_bytes = 169280
+                     n_qp_detect = 16815
+                        n_qp_nap = 16782
+-------------------------------------------------
+run bench-timestone u200 num thread 56
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 56
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+Creating thread 40
+Creating thread 41
+Creating thread 42
+Creating thread 43
+Creating thread 44
+Creating thread 45
+Creating thread 46
+Creating thread 47
+Creating thread 48
+Creating thread 49
+Creating thread 50
+Creating thread 51
+Creating thread 52
+Creating thread 53
+Creating thread 54
+Creating thread 55
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+[wait for thread comp i:40 
+[wait for thread comp i:41 
+[wait for thread comp i:42 
+[wait for thread comp i:43 
+[wait for thread comp i:44 
+[wait for thread comp i:45 
+[wait for thread comp i:46 
+[wait for thread comp i:47 
+[wait for thread comp i:48 
+[wait for thread comp i:49 
+[wait for thread comp i:50 
+[wait for thread comp i:51 
+[wait for thread comp i:52 
+[wait for thread comp i:53 
+[wait for thread comp i:54 
+[wait for thread comp i:55 
+Set size      : 10020 (expected: 10020)
+Set size(RLU) : 10020 (expected: 10020)
+Duration      : 10000 (ms)
+#ops          : 1882796 (188279.600000 / s)
+#read ops     : 1505514 (150551.400000 / s)
+#update ops   : 377282 (37728.200000 / s)
+#cmt_update ops : 250742 (25074.200000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1883455
+                        n_finish = 1882796
+                        n_aborts = 659
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 7021336
+             n_tvlog_best_effort = 392
+                    n_tvlog_ckpt = 448
+     n_tvlog_cpobj_written_bytes = 56193728
+           n_tvlog_written_bytes = 92113088
+         n_tvlog_reclaimed_bytes = 88272704
+              n_tvlog_ckpt_bytes = 7302960
+                 n_oplog_reclaim = 183
+           n_oplog_reclaimed_ops = 240298
+         n_oplog_reclaimed_bytes = 15379072
+           n_oplog_written_bytes = 16687488
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 280
+       n_ckptlog_reclaimed_bytes = 10529024
+       n_ckptlog_writeback_bytes = 162528
+                     n_qp_detect = 16721
+                        n_qp_nap = 16686
+-------------------------------------------------
+run bench-timestone u200 num thread 64
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 64
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 200
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+Creating thread 40
+Creating thread 41
+Creating thread 42
+Creating thread 43
+Creating thread 44
+Creating thread 45
+Creating thread 46
+Creating thread 47
+Creating thread 48
+Creating thread 49
+Creating thread 50
+Creating thread 51
+Creating thread 52
+Creating thread 53
+Creating thread 54
+Creating thread 55
+Creating thread 56
+Creating thread 57
+Creating thread 58
+Creating thread 59
+Creating thread 60
+Creating thread 61
+Creating thread 62
+Creating thread 63
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+[wait for thread comp i:40 
+[wait for thread comp i:41 
+[wait for thread comp i:42 
+[wait for thread comp i:43 
+[wait for thread comp i:44 
+[wait for thread comp i:45 
+[wait for thread comp i:46 
+[wait for thread comp i:47 
+[wait for thread comp i:48 
+[wait for thread comp i:49 
+[wait for thread comp i:50 
+[wait for thread comp i:51 
+[wait for thread comp i:52 
+[wait for thread comp i:53 
+[wait for thread comp i:54 
+[wait for thread comp i:55 
+[wait for thread comp i:56 
+[wait for thread comp i:57 
+[wait for thread comp i:58 
+[wait for thread comp i:59 
+[wait for thread comp i:60 
+[wait for thread comp i:61 
+[wait for thread comp i:62 
+[wait for thread comp i:63 
+Set size      : 10013 (expected: 10013)
+Set size(RLU) : 10013 (expected: 10013)
+Duration      : 10000 (ms)
+#ops          : 2092313 (209231.300000 / s)
+#read ops     : 1673837 (167383.700000 / s)
+#update ops   : 418476 (41847.600000 / s)
+#cmt_update ops : 278113 (27811.300000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 2093139
+                        n_finish = 2092313
+                        n_aborts = 826
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 7787528
+             n_tvlog_best_effort = 448
+                    n_tvlog_ckpt = 512
+     n_tvlog_cpobj_written_bytes = 62329472
+           n_tvlog_written_bytes = 101748992
+         n_tvlog_reclaimed_bytes = 97908608
+              n_tvlog_ckpt_bytes = 6001896
+                 n_oplog_reclaim = 217
+           n_oplog_reclaimed_ops = 278943
+         n_oplog_reclaimed_bytes = 17852352
+           n_oplog_written_bytes = 18439232
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 320
+       n_ckptlog_reclaimed_bytes = 10945984
+       n_ckptlog_writeback_bytes = 143648
+                     n_qp_detect = 6725
+                        n_qp_nap = 6688
+-------------------------------------------------
+####################################
+####################################
+Evaluation List 10K 
+run bench-timestone u800 num thread 1
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 1
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+Set size      : 10000 (expected: 10000)
+Set size(RLU) : 10000 (expected: 10000)
+Duration      : 10000 (ms)
+#ops          : 55240 (5524.000000 / s)
+#read ops     : 11126 (1112.600000 / s)
+#update ops   : 44114 (4411.400000 / s)
+#cmt_update ops : 29450 (2945.000000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 55240
+                        n_finish = 55240
+                        n_aborts = 0
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 824600
+             n_tvlog_best_effort = 56
+                    n_tvlog_ckpt = 40
+     n_tvlog_cpobj_written_bytes = 6597888
+           n_tvlog_written_bytes = 14208512
+         n_tvlog_reclaimed_bytes = 10368128
+              n_tvlog_ckpt_bytes = 4721592
+                 n_oplog_reclaim = 4
+           n_oplog_reclaimed_ops = 38309
+         n_oplog_reclaimed_bytes = 2451904
+           n_oplog_written_bytes = 2524928
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 5
+       n_ckptlog_reclaimed_bytes = 2584448
+       n_ckptlog_writeback_bytes = 109808
+                     n_qp_detect = 19828
+                        n_qp_nap = 19740
+-------------------------------------------------
+run bench-timestone u800 num thread 4
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 4
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+Set size      : 10001 (expected: 10001)
+Set size(RLU) : 10001 (expected: 10001)
+Duration      : 10000 (ms)
+#ops          : 184935 (18493.500000 / s)
+#read ops     : 37074 (3707.400000 / s)
+#update ops   : 147861 (14786.100000 / s)
+#cmt_update ops : 98571 (9857.100000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 184975
+                        n_finish = 184935
+                        n_aborts = 40
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 2760016
+             n_tvlog_best_effort = 176
+                    n_tvlog_ckpt = 147
+     n_tvlog_cpobj_written_bytes = 22084992
+           n_tvlog_written_bytes = 38543232
+         n_tvlog_reclaimed_bytes = 34702848
+              n_tvlog_ckpt_bytes = 11479584
+                 n_oplog_reclaim = 28
+           n_oplog_reclaimed_ops = 106196
+         n_oplog_reclaimed_bytes = 6796864
+           n_oplog_written_bytes = 6948864
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 22
+       n_ckptlog_reclaimed_bytes = 7146368
+       n_ckptlog_writeback_bytes = 131264
+                     n_qp_detect = 19779
+                        n_qp_nap = 19705
+-------------------------------------------------
+run bench-timestone u800 num thread 8
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 8
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+Set size      : 10002 (expected: 10002)
+Set size(RLU) : 10002 (expected: 10002)
+Duration      : 10000 (ms)
+#ops          : 332846 (33284.600000 / s)
+#read ops     : 66877 (6687.700000 / s)
+#update ops   : 265969 (26596.900000 / s)
+#cmt_update ops : 176922 (17692.200000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 333067
+                        n_finish = 332846
+                        n_aborts = 221
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 4953872
+             n_tvlog_best_effort = 376
+                    n_tvlog_ckpt = 259
+     n_tvlog_cpobj_written_bytes = 39647168
+           n_tvlog_written_bytes = 66127168
+         n_tvlog_reclaimed_bytes = 62286784
+              n_tvlog_ckpt_bytes = 15953752
+                 n_oplog_reclaim = 99
+           n_oplog_reclaimed_ops = 180210
+         n_oplog_reclaimed_bytes = 11533952
+           n_oplog_written_bytes = 11963520
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 42
+       n_ckptlog_reclaimed_bytes = 11209472
+       n_ckptlog_writeback_bytes = 144736
+                     n_qp_detect = 19613
+                        n_qp_nap = 19535
+-------------------------------------------------
+run bench-timestone u800 num thread 16
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 16
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+Set size      : 10002 (expected: 10002)
+Set size(RLU) : 10002 (expected: 10002)
+Duration      : 10000 (ms)
+#ops          : 586588 (58658.800000 / s)
+#read ops     : 117106 (11710.600000 / s)
+#update ops   : 469482 (46948.200000 / s)
+#cmt_update ops : 313266 (31326.600000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 587364
+                        n_finish = 586588
+                        n_aborts = 776
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 8771504
+             n_tvlog_best_effort = 672
+                    n_tvlog_ckpt = 449
+     n_tvlog_cpobj_written_bytes = 70208256
+           n_tvlog_written_bytes = 114127616
+         n_tvlog_reclaimed_bytes = 110287232
+              n_tvlog_ckpt_bytes = 18755208
+                 n_oplog_reclaim = 206
+           n_oplog_reclaimed_ops = 301715
+         n_oplog_reclaimed_bytes = 19310784
+           n_oplog_written_bytes = 20690048
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 81
+       n_ckptlog_reclaimed_bytes = 16542464
+       n_ckptlog_writeback_bytes = 166256
+                     n_qp_detect = 18938
+                        n_qp_nap = 18866
+-------------------------------------------------
+run bench-timestone u800 num thread 24
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 24
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+[0] Initializing
+[0] Adding 10000 entries to set
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+Set size      : 10010 (expected: 10010)
+Set size(RLU) : 10010 (expected: 10010)
+Duration      : 10000 (ms)
+#ops          : 853909 (85390.900000 / s)
+#read ops     : 170591 (17059.100000 / s)
+#update ops   : 683318 (68331.800000 / s)
+#cmt_update ops : 454632 (45463.200000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 855938
+                        n_finish = 853909
+                        n_aborts = 2029
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 12729976
+             n_tvlog_best_effort = 960
+                    n_tvlog_ckpt = 720
+     n_tvlog_cpobj_written_bytes = 101906816
+           n_tvlog_written_bytes = 163897088
+         n_tvlog_reclaimed_bytes = 160056704
+              n_tvlog_ckpt_bytes = 24754776
+                 n_oplog_reclaim = 415
+           n_oplog_reclaimed_ops = 455322
+         n_oplog_reclaimed_bytes = 29142144
+           n_oplog_written_bytes = 29737984
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 120
+       n_ckptlog_reclaimed_bytes = 23146880
+       n_ckptlog_writeback_bytes = 129968
+                     n_qp_detect = 17186
+                        n_qp_nap = 17113
+-------------------------------------------------
+run bench-timestone u800 num thread 32
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 32
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+Set size      : 10011 (expected: 10011)
+Set size(RLU) : 10011 (expected: 10011)
+Duration      : 10000 (ms)
+#ops          : 1089550 (108955.000000 / s)
+#read ops     : 218030 (21803.000000 / s)
+#update ops   : 871520 (87152.000000 / s)
+#cmt_update ops : 580629 (58062.900000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1092362
+                        n_finish = 1089550
+                        n_aborts = 2812
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 16257920
+             n_tvlog_best_effort = 1248
+                    n_tvlog_ckpt = 864
+     n_tvlog_cpobj_written_bytes = 130186048
+           n_tvlog_written_bytes = 208255744
+         n_tvlog_reclaimed_bytes = 204415360
+              n_tvlog_ckpt_bytes = 24015568
+                 n_oplog_reclaim = 488
+           n_oplog_reclaimed_ops = 583267
+         n_oplog_reclaimed_bytes = 37331136
+           n_oplog_written_bytes = 37802304
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 160
+       n_ckptlog_reclaimed_bytes = 26917888
+       n_ckptlog_writeback_bytes = 152960
+                     n_qp_detect = 17875
+                        n_qp_nap = 17807
+-------------------------------------------------
+run bench-timestone u800 num thread 40
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 40
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+Set size      : 10012 (expected: 10012)
+Set size(RLU) : 10012 (expected: 10012)
+Duration      : 10001 (ms)
+#ops          : 1347250 (134711.528847 / s)
+#read ops     : 269732 (26970.502950 / s)
+#update ops   : 1077518 (107741.025897 / s)
+#cmt_update ops : 717484 (71741.225877 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1351734
+                        n_finish = 1347250
+                        n_aborts = 4484
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 20089888
+             n_tvlog_best_effort = 1560
+                    n_tvlog_ckpt = 1080
+     n_tvlog_cpobj_written_bytes = 160913472
+           n_tvlog_written_bytes = 256436288
+         n_tvlog_reclaimed_bytes = 252595904
+              n_tvlog_ckpt_bytes = 26156248
+                 n_oplog_reclaim = 675
+           n_oplog_reclaimed_ops = 724902
+         n_oplog_reclaimed_bytes = 46396288
+           n_oplog_written_bytes = 46561536
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 200
+       n_ckptlog_reclaimed_bytes = 32029952
+       n_ckptlog_writeback_bytes = 137600
+                     n_qp_detect = 17466
+                        n_qp_nap = 17399
+-------------------------------------------------
+run bench-timestone u800 num thread 48
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 48
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+Creating thread 40
+Creating thread 41
+Creating thread 42
+Creating thread 43
+Creating thread 44
+Creating thread 45
+Creating thread 46
+Creating thread 47
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+[wait for thread comp i:40 
+[wait for thread comp i:41 
+[wait for thread comp i:42 
+[wait for thread comp i:43 
+[wait for thread comp i:44 
+[wait for thread comp i:45 
+[wait for thread comp i:46 
+[wait for thread comp i:47 
+Set size      : 10015 (expected: 10015)
+Set size(RLU) : 10015 (expected: 10015)
+Duration      : 10000 (ms)
+#ops          : 1575958 (157595.800000 / s)
+#read ops     : 315997 (31599.700000 / s)
+#update ops   : 1259961 (125996.100000 / s)
+#cmt_update ops : 838595 (83859.500000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1582317
+                        n_finish = 1575958
+                        n_aborts = 6359
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 23481080
+             n_tvlog_best_effort = 1776
+                    n_tvlog_ckpt = 1248
+     n_tvlog_cpobj_written_bytes = 188104896
+           n_tvlog_written_bytes = 299073472
+         n_tvlog_reclaimed_bytes = 295233088
+              n_tvlog_ckpt_bytes = 28913192
+                 n_oplog_reclaim = 801
+           n_oplog_reclaimed_ops = 808449
+         n_oplog_reclaimed_bytes = 51742592
+           n_oplog_written_bytes = 54313152
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 240
+       n_ckptlog_reclaimed_bytes = 36852480
+       n_ckptlog_writeback_bytes = 176064
+                     n_qp_detect = 16914
+                        n_qp_nap = 16848
+-------------------------------------------------
+run bench-timestone u800 num thread 56
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 56
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+Creating thread 21
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+Creating thread 40
+Creating thread 41
+Creating thread 42
+Creating thread 43
+Creating thread 44
+Creating thread 45
+Creating thread 46
+Creating thread 47
+Creating thread 48
+Creating thread 49
+Creating thread 50
+Creating thread 51
+Creating thread 52
+Creating thread 53
+Creating thread 54
+Creating thread 55
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+[wait for thread comp i:40 
+[wait for thread comp i:41 
+[wait for thread comp i:42 
+[wait for thread comp i:43 
+[wait for thread comp i:44 
+[wait for thread comp i:45 
+[wait for thread comp i:46 
+[wait for thread comp i:47 
+[wait for thread comp i:48 
+[wait for thread comp i:49 
+[wait for thread comp i:50 
+[wait for thread comp i:51 
+[wait for thread comp i:52 
+[wait for thread comp i:53 
+[wait for thread comp i:54 
+[wait for thread comp i:55 
+Set size      : 10017 (expected: 10017)
+Set size(RLU) : 10017 (expected: 10017)
+Duration      : 10001 (ms)
+#ops          : 1762329 (176215.278472 / s)
+#read ops     : 352896 (35286.071393 / s)
+#update ops   : 1409433 (140929.207079 / s)
+#cmt_update ops : 937045 (93695.130487 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1777216
+                        n_finish = 1762329
+                        n_aborts = 14887
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 26237736
+             n_tvlog_best_effort = 2184
+                    n_tvlog_ckpt = 1400
+     n_tvlog_cpobj_written_bytes = 210244544
+           n_tvlog_written_bytes = 333734592
+         n_tvlog_reclaimed_bytes = 329894208
+              n_tvlog_ckpt_bytes = 28466784
+                 n_oplog_reclaim = 1077
+           n_oplog_reclaimed_ops = 925802
+         n_oplog_reclaimed_bytes = 59253376
+           n_oplog_written_bytes = 60613632
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 280
+       n_ckptlog_reclaimed_bytes = 39835456
+       n_ckptlog_writeback_bytes = 168816
+                     n_qp_detect = 6409
+                        n_qp_nap = 6341
+-------------------------------------------------
+run bench-timestone u800 num thread 64
+Set type     	   : hash-list
+Buckets      	   : 1
+Duration           : 10000
+Initial size 	   : 10000
+Nb threads   	   : 64
+Value range  	   : 20000
+Seed         	   : 0
+Update rate  	   : 800
+Operation count	   : 1
+Zipf dist    	   : 0
+Zipf dist val	   : 0.000000
+NVheap_pool_path   : /mnt/pmemnd/devices/region0
+NVheap_pool_size   : 51539607552
+Alternate          : 1
+Node size    	   : 16
+Type sizes   	   : int=4/long=8/ptr=8/word=8
+initializing URCU finished, node_size: 8200
+Creating thread 0
+Creating thread 1
+Creating thread 2
+Creating thread 3
+Creating thread 4
+Creating thread 5
+Creating thread 6
+Creating thread 7
+Creating thread 8
+Creating thread 9
+Creating thread 10
+Creating thread 11
+Creating thread 12
+Creating thread 13
+Creating thread 14
+Creating thread 15
+Creating thread 16
+Creating thread 17
+Creating thread 18
+Creating thread 19
+Creating thread 20
+[0] Initializing
+[0] Adding 10000 entries to set
+Creating thread 21
+Creating thread 22
+Creating thread 23
+Creating thread 24
+Creating thread 25
+Creating thread 26
+Creating thread 27
+Creating thread 28
+Creating thread 29
+Creating thread 30
+Creating thread 31
+Creating thread 32
+Creating thread 33
+Creating thread 34
+Creating thread 35
+Creating thread 36
+Creating thread 37
+Creating thread 38
+Creating thread 39
+Creating thread 40
+Creating thread 41
+Creating thread 42
+Creating thread 43
+Creating thread 44
+Creating thread 45
+Creating thread 46
+Creating thread 47
+Creating thread 48
+Creating thread 49
+Creating thread 50
+Creating thread 51
+Creating thread 52
+Creating thread 53
+Creating thread 54
+Creating thread 55
+Creating thread 56
+Creating thread 57
+Creating thread 58
+Creating thread 59
+Creating thread 60
+Creating thread 61
+Creating thread 62
+Creating thread 63
+[0] Adding done
+Reset stats in test()!!
+STARTING THREADS...
+STOPPING THREADS...
+[wait for thread comp i:0 
+[wait for thread comp i:1 
+[wait for thread comp i:2 
+[wait for thread comp i:3 
+[wait for thread comp i:4 
+[wait for thread comp i:5 
+[wait for thread comp i:6 
+[wait for thread comp i:7 
+[wait for thread comp i:8 
+[wait for thread comp i:9 
+[wait for thread comp i:10 
+[wait for thread comp i:11 
+[wait for thread comp i:12 
+[wait for thread comp i:13 
+[wait for thread comp i:14 
+[wait for thread comp i:15 
+[wait for thread comp i:16 
+[wait for thread comp i:17 
+[wait for thread comp i:18 
+[wait for thread comp i:19 
+[wait for thread comp i:20 
+[wait for thread comp i:21 
+[wait for thread comp i:22 
+[wait for thread comp i:23 
+[wait for thread comp i:24 
+[wait for thread comp i:25 
+[wait for thread comp i:26 
+[wait for thread comp i:27 
+[wait for thread comp i:28 
+[wait for thread comp i:29 
+[wait for thread comp i:30 
+[wait for thread comp i:31 
+[wait for thread comp i:32 
+[wait for thread comp i:33 
+[wait for thread comp i:34 
+[wait for thread comp i:35 
+[wait for thread comp i:36 
+[wait for thread comp i:37 
+[wait for thread comp i:38 
+[wait for thread comp i:39 
+[wait for thread comp i:40 
+[wait for thread comp i:41 
+[wait for thread comp i:42 
+[wait for thread comp i:43 
+[wait for thread comp i:44 
+[wait for thread comp i:45 
+[wait for thread comp i:46 
+[wait for thread comp i:47 
+[wait for thread comp i:48 
+[wait for thread comp i:49 
+[wait for thread comp i:50 
+[wait for thread comp i:51 
+[wait for thread comp i:52 
+[wait for thread comp i:53 
+[wait for thread comp i:54 
+[wait for thread comp i:55 
+[wait for thread comp i:56 
+[wait for thread comp i:57 
+[wait for thread comp i:58 
+[wait for thread comp i:59 
+[wait for thread comp i:60 
+[wait for thread comp i:61 
+[wait for thread comp i:62 
+[wait for thread comp i:63 
+Set size      : 10021 (expected: 10021)
+Set size(RLU) : 10021 (expected: 10021)
+Duration      : 10000 (ms)
+#ops          : 1982254 (198225.400000 / s)
+#read ops     : 396506 (39650.600000 / s)
+#update ops   : 1585748 (158574.800000 / s)
+#cmt_update ops : 1054575 (105457.500000 / s)
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 1993037
+                        n_finish = 1982254
+                        n_aborts = 10783
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 29528688
+             n_tvlog_best_effort = 2624
+                    n_tvlog_ckpt = 1536
+     n_tvlog_cpobj_written_bytes = 236670656
+           n_tvlog_written_bytes = 375112960
+         n_tvlog_reclaimed_bytes = 371272576
+              n_tvlog_ckpt_bytes = 28627888
+                 n_oplog_reclaim = 1231
+           n_oplog_reclaimed_ops = 1024061
+         n_oplog_reclaimed_bytes = 65540096
+           n_oplog_written_bytes = 68135488
+           n_ckptlog_best_effort = 0
+             n_ckptlog_writeback = 320
+       n_ckptlog_reclaimed_bytes = 43642688
+       n_ckptlog_writeback_bytes = 177072
+                     n_qp_detect = 5838
+                        n_qp_nap = 5767
+-------------------------------------------------

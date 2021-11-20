@@ -1,0 +1,2475 @@
+####################################
+Evaluation Tree 10K 
+run bench-timestone u20 num thread 1
+List benchmark
+Test time:     10000
+Thread number: 1
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 207864, del 208382, find 20381903
+List benchmark ends:
+  duration: 10000 ms
+  ops:      20798149 (2079814.900000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.000000 
+  abort:      0 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 20798149
+                        n_finish = 20798149
+                        n_aborts = 0
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 6661376
+             n_tvlog_best_effort = 479
+                    n_tvlog_ckpt = 283
+     n_tvlog_cpobj_written_bytes = 47236480
+           n_tvlog_written_bytes = 73886464
+         n_tvlog_reclaimed_bytes = 73886464
+              n_tvlog_ckpt_bytes = 44557400
+                 n_oplog_reclaim = 18
+           n_oplog_reclaimed_ops = 207050
+         n_oplog_reclaimed_bytes = 13251968
+           n_oplog_written_bytes = 13323904
+           n_ckptlog_best_effort = 176
+             n_ckptlog_writeback = 92
+       n_ckptlog_reclaimed_bytes = 35773312
+       n_ckptlog_writeback_bytes = 468864
+                     n_qp_detect = 20715
+                        n_qp_nap = 20162
+-------------------------------------------------
+run bench-timestone u20 num thread 4
+List benchmark
+Test time:     10000
+Thread number: 4
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 193907, del 194163, find 19056813
+Thread 1: ins 194995, del 195807, find 19080848
+Thread 2: ins 197000, del 197112, find 19355613
+Thread 3: ins 195070, del 194425, find 19091274
+List benchmark ends:
+  duration: 10000 ms
+  ops:      78147027 (7814702.700000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.000005 
+  abort:      418 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 78147445
+                        n_finish = 78147027
+                        n_aborts = 418
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 25028864
+             n_tvlog_best_effort = 1288
+                    n_tvlog_ckpt = 1096
+     n_tvlog_cpobj_written_bytes = 177691648
+           n_tvlog_written_bytes = 277821568
+         n_tvlog_reclaimed_bytes = 277821568
+              n_tvlog_ckpt_bytes = 140006584
+                 n_oplog_reclaim = 81
+           n_oplog_reclaimed_ops = 777985
+         n_oplog_reclaimed_bytes = 49793856
+           n_oplog_written_bytes = 50070080
+           n_ckptlog_best_effort = 316
+             n_ckptlog_writeback = 44
+       n_ckptlog_reclaimed_bytes = 112601856
+       n_ckptlog_writeback_bytes = 214008
+                     n_qp_detect = 19666
+                        n_qp_nap = 19272
+-------------------------------------------------
+run bench-timestone u20 num thread 8
+List benchmark
+Test time:     10000
+Thread number: 8
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 175164, del 175216, find 17163207
+Thread 1: ins 174573, del 175032, find 17084020
+Thread 2: ins 173848, del 174135, find 17020074
+Thread 3: ins 174383, del 174034, find 17083658
+Thread 4: ins 173320, del 173710, find 17033772
+Thread 5: ins 176825, del 177327, find 17328205
+Thread 6: ins 175034, del 175107, find 17202586
+Thread 7: ins 173939, del 173841, find 17030159
+List benchmark ends:
+  duration: 10000 ms
+  ops:      139741169 (13974116.900000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.000014 
+  abort:      2024 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 139743193
+                        n_finish = 139741169
+                        n_aborts = 2024
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 44728128
+             n_tvlog_best_effort = 2209
+                    n_tvlog_ckpt = 1976
+     n_tvlog_cpobj_written_bytes = 317493504
+           n_tvlog_written_bytes = 496352384
+         n_tvlog_reclaimed_bytes = 496352384
+              n_tvlog_ckpt_bytes = 203103080
+                 n_oplog_reclaim = 168
+           n_oplog_reclaimed_ops = 1396373
+         n_oplog_reclaimed_bytes = 89372992
+           n_oplog_written_bytes = 89465856
+           n_ckptlog_best_effort = 208
+             n_ckptlog_writeback = 56
+       n_ckptlog_reclaimed_bytes = 168307200
+       n_ckptlog_writeback_bytes = 226512
+                     n_qp_detect = 20477
+                        n_qp_nap = 20174
+-------------------------------------------------
+run bench-timestone u20 num thread 16
+List benchmark
+Test time:     10000
+Thread number: 16
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 158701, del 158851, find 15566264
+Thread 1: ins 156583, del 156906, find 15363811
+Thread 2: ins 157607, del 157643, find 15421944
+Thread 3: ins 157767, del 157545, find 15420707
+Thread 4: ins 157722, del 157316, find 15448280
+Thread 5: ins 156445, del 156355, find 15358443
+Thread 6: ins 157758, del 157769, find 15456872
+Thread 7: ins 155710, del 155410, find 15264470
+Thread 8: ins 157743, del 158076, find 15436237
+Thread 9: ins 158092, del 157806, find 15464235
+Thread 10: ins 152319, del 152706, find 14954853
+Thread 11: ins 156531, del 156570, find 15339151
+Thread 12: ins 157429, del 157738, find 15410836
+Thread 13: ins 157353, del 156844, find 15413171
+Thread 14: ins 158903, del 158806, find 15584652
+Thread 15: ins 159444, del 159225, find 15602348
+List benchmark ends:
+  duration: 10000 ms
+  ops:      251537947 (25153794.700000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.000174 
+  abort:      43891 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 251581838
+                        n_finish = 251537947
+                        n_aborts = 43891
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 80503296
+             n_tvlog_best_effort = 3872
+                    n_tvlog_ckpt = 3584
+     n_tvlog_cpobj_written_bytes = 572190208
+           n_tvlog_written_bytes = 893463424
+         n_tvlog_reclaimed_bytes = 893463424
+              n_tvlog_ckpt_bytes = 297844992
+                 n_oplog_reclaim = 419
+           n_oplog_reclaimed_ops = 2494710
+         n_oplog_reclaimed_bytes = 159670656
+           n_oplog_written_bytes = 161014656
+           n_ckptlog_best_effort = 528
+             n_ckptlog_writeback = 208
+       n_ckptlog_reclaimed_bytes = 255325696
+       n_ckptlog_writeback_bytes = 291072
+                     n_qp_detect = 18639
+                        n_qp_nap = 18357
+-------------------------------------------------
+run bench-timestone u20 num thread 24
+List benchmark
+Test time:     10000
+Thread number: 24
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 145856, del 146060, find 14296910
+Thread 1: ins 161161, del 160979, find 15798105
+Thread 2: ins 161525, del 161625, find 15843166
+Thread 3: ins 163839, del 163820, find 16059292
+Thread 4: ins 145812, del 146419, find 14337538
+Thread 5: ins 146210, del 146154, find 14354834
+Thread 6: ins 134052, del 134268, find 13109995
+Thread 7: ins 145792, del 146028, find 14281582
+Thread 8: ins 147977, del 148226, find 14526009
+Thread 9: ins 147248, del 146871, find 14404252
+Thread 10: ins 146595, del 147043, find 14385693
+Thread 11: ins 147179, del 147723, find 14507302
+Thread 12: ins 147041, del 146960, find 14381396
+Thread 13: ins 148120, del 147802, find 14494904
+Thread 14: ins 163183, del 163105, find 16018590
+Thread 15: ins 145883, del 146738, find 14306706
+Thread 16: ins 147833, del 147537, find 14473269
+Thread 17: ins 145594, del 145889, find 14333304
+Thread 18: ins 160538, del 160621, find 15776531
+Thread 19: ins 163412, del 163407, find 16016368
+Thread 20: ins 146468, del 146564, find 14352792
+Thread 21: ins 155573, del 155753, find 15257345
+Thread 22: ins 147729, del 148224, find 14451536
+Thread 23: ins 159195, del 159104, find 15604632
+List benchmark ends:
+  duration: 10000 ms
+  ops:      362622786 (36262278.600000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.002711 
+  abort:      985897 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 363608683
+                        n_finish = 362622786
+                        n_aborts = 985897
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 111277312
+             n_tvlog_best_effort = 5976
+                    n_tvlog_ckpt = 5424
+     n_tvlog_cpobj_written_bytes = 803080192
+           n_tvlog_written_bytes = 1232773888
+         n_tvlog_reclaimed_bytes = 1232773888
+              n_tvlog_ckpt_bytes = 385388648
+                 n_oplog_reclaim = 1039
+           n_oplog_reclaimed_ops = 3450732
+         n_oplog_reclaimed_bytes = 220859200
+           n_oplog_written_bytes = 222568576
+           n_ckptlog_best_effort = 1920
+             n_ckptlog_writeback = 552
+       n_ckptlog_reclaimed_bytes = 336022528
+       n_ckptlog_writeback_bytes = 318168
+                     n_qp_detect = 14601
+                        n_qp_nap = 14247
+-------------------------------------------------
+run bench-timestone u20 num thread 32
+List benchmark
+Test time:     10000
+Thread number: 32
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 132565, del 133070, find 12970459
+Thread 1: ins 149135, del 148981, find 14644833
+Thread 2: ins 148658, del 148555, find 14535943
+Thread 3: ins 149927, del 149996, find 14663841
+Thread 4: ins 149132, del 149686, find 14587049
+Thread 5: ins 148387, del 148258, find 14573987
+Thread 6: ins 151619, del 151170, find 14846155
+Thread 7: ins 150807, del 151544, find 14833922
+Thread 8: ins 150146, del 149820, find 14679075
+Thread 9: ins 149045, del 148821, find 14573825
+Thread 10: ins 148260, del 147975, find 14485866
+Thread 11: ins 149357, del 149711, find 14661701
+Thread 12: ins 151310, del 151556, find 14804297
+Thread 13: ins 147941, del 148219, find 14562160
+Thread 14: ins 150339, del 150656, find 14758289
+Thread 15: ins 150679, del 150348, find 14763311
+Thread 16: ins 150553, del 150469, find 14757364
+Thread 17: ins 150544, del 149969, find 14741358
+Thread 18: ins 149855, del 149538, find 14704485
+Thread 19: ins 147328, del 147964, find 14453630
+Thread 20: ins 151771, del 151272, find 14853673
+Thread 21: ins 144649, del 144555, find 14184712
+Thread 22: ins 148334, del 148097, find 14517461
+Thread 23: ins 150082, del 150202, find 14699496
+Thread 24: ins 148528, del 149243, find 14616024
+Thread 25: ins 151382, del 151122, find 14810152
+Thread 26: ins 149773, del 150923, find 14696264
+Thread 27: ins 149287, del 149242, find 14648359
+Thread 28: ins 150255, del 150494, find 14699500
+Thread 29: ins 149124, del 148997, find 14631478
+Thread 30: ins 150198, del 149799, find 14675437
+Thread 31: ins 147925, del 147422, find 14474483
+List benchmark ends:
+  duration: 10000 ms
+  ops:      476643158 (47664315.800000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.006072 
+  abort:      2911727 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 479554885
+                        n_finish = 476643158
+                        n_aborts = 2911727
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 152476672
+             n_tvlog_best_effort = 7776
+                    n_tvlog_ckpt = 6752
+     n_tvlog_cpobj_written_bytes = 1141485952
+           n_tvlog_written_bytes = 1691949696
+         n_tvlog_reclaimed_bytes = 1691949696
+              n_tvlog_ckpt_bytes = 475072528
+                 n_oplog_reclaim = 1386
+           n_oplog_reclaimed_ops = 4753884
+         n_oplog_reclaimed_bytes = 304266752
+           n_oplog_written_bytes = 304971968
+           n_ckptlog_best_effort = 3488
+             n_ckptlog_writeback = 832
+       n_ckptlog_reclaimed_bytes = 421817088
+       n_ckptlog_writeback_bytes = 373560
+                     n_qp_detect = 10984
+                        n_qp_nap = 10608
+-------------------------------------------------
+run bench-timestone u20 num thread 40
+List benchmark
+Test time:     10000
+Thread number: 40
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 145035, del 145918, find 14224980
+Thread 1: ins 143852, del 143765, find 14084628
+Thread 2: ins 144442, del 144183, find 14120676
+Thread 3: ins 146254, del 146469, find 14394370
+Thread 4: ins 125737, del 125780, find 12299998
+Thread 5: ins 124700, del 124709, find 12212068
+Thread 6: ins 124573, del 124942, find 12262803
+Thread 7: ins 145095, del 144750, find 14212998
+Thread 8: ins 144484, del 144820, find 14114191
+Thread 9: ins 144928, del 145530, find 14251904
+Thread 10: ins 125668, del 125805, find 12322007
+Thread 11: ins 125692, del 125585, find 12314744
+Thread 12: ins 134172, del 134720, find 13196790
+Thread 13: ins 123785, del 124395, find 12191133
+Thread 14: ins 145089, del 144879, find 14242455
+Thread 15: ins 129385, del 129095, find 12674641
+Thread 16: ins 141435, del 140342, find 13834199
+Thread 17: ins 125241, del 124925, find 12259244
+Thread 18: ins 125752, del 125865, find 12318963
+Thread 19: ins 145543, del 144929, find 14242289
+Thread 20: ins 144638, del 144414, find 14182358
+Thread 21: ins 115023, del 114549, find 11276853
+Thread 22: ins 145518, del 145910, find 14267807
+Thread 23: ins 145289, del 145376, find 14232458
+Thread 24: ins 128944, del 129869, find 12695733
+Thread 25: ins 145781, del 145755, find 14283998
+Thread 26: ins 124023, del 124211, find 12190309
+Thread 27: ins 136084, del 136665, find 13300068
+Thread 28: ins 144415, del 144188, find 14155414
+Thread 29: ins 124903, del 125577, find 12304591
+Thread 30: ins 144806, del 144648, find 14184720
+Thread 31: ins 124327, del 124355, find 12202721
+Thread 32: ins 146572, del 146401, find 14352780
+Thread 33: ins 145283, del 145055, find 14203512
+Thread 34: ins 145923, del 145404, find 14289167
+Thread 35: ins 136762, del 136798, find 13393418
+Thread 36: ins 124794, del 124652, find 12235987
+Thread 37: ins 124446, del 124531, find 12223251
+Thread 38: ins 130474, del 129810, find 12755854
+Thread 39: ins 144948, del 145652, find 14237791
+List benchmark ends:
+  duration: 10000 ms
+  ops:      543612912 (54361291.200000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.008644 
+  abort:      4739971 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 548352883
+                        n_finish = 543612912
+                        n_aborts = 4739971
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 173061504
+             n_tvlog_best_effort = 7920
+                    n_tvlog_ckpt = 8160
+     n_tvlog_cpobj_written_bytes = 1451102848
+           n_tvlog_written_bytes = 1919367808
+         n_tvlog_reclaimed_bytes = 1919367808
+              n_tvlog_ckpt_bytes = 512862784
+                 n_oplog_reclaim = 1896
+           n_oplog_reclaimed_ops = 5402483
+         n_oplog_reclaimed_bytes = 345778240
+           n_oplog_written_bytes = 346141888
+           n_ckptlog_best_effort = 4193
+             n_ckptlog_writeback = 1080
+       n_ckptlog_reclaimed_bytes = 460766848
+       n_ckptlog_writeback_bytes = 287304
+                     n_qp_detect = 9394
+                        n_qp_nap = 9066
+-------------------------------------------------
+run bench-timestone u20 num thread 48
+List benchmark
+Test time:     10000
+Thread number: 48
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 129322, del 129488, find 12642288
+Thread 1: ins 122883, del 122373, find 12003616
+Thread 2: ins 121968, del 121670, find 11941281
+Thread 3: ins 138083, del 137749, find 13510887
+Thread 4: ins 139656, del 140211, find 13760901
+Thread 5: ins 122509, del 122736, find 11987210
+Thread 6: ins 139088, del 139697, find 13654917
+Thread 7: ins 122536, del 122606, find 12017078
+Thread 8: ins 124341, del 124210, find 12158920
+Thread 9: ins 135723, del 135522, find 13311803
+Thread 10: ins 121452, del 121556, find 11937395
+Thread 11: ins 140608, del 141233, find 13754907
+Thread 12: ins 140836, del 140775, find 13769375
+Thread 13: ins 134059, del 134808, find 13190384
+Thread 14: ins 124147, del 123955, find 12165104
+Thread 15: ins 136958, del 137370, find 13491967
+Thread 16: ins 122606, del 122330, find 12022792
+Thread 17: ins 123437, del 122976, find 12095594
+Thread 18: ins 130247, del 130351, find 12775375
+Thread 19: ins 116356, del 116195, find 11387738
+Thread 20: ins 139999, del 139266, find 13701953
+Thread 21: ins 140457, del 140424, find 13797470
+Thread 22: ins 121905, del 122388, find 11970613
+Thread 23: ins 122574, del 122363, find 12006070
+Thread 24: ins 122468, del 122721, find 11985193
+Thread 25: ins 122093, del 121962, find 11935554
+Thread 26: ins 123616, del 123508, find 12096632
+Thread 27: ins 121086, del 121066, find 11905501
+Thread 28: ins 140317, del 140431, find 13739001
+Thread 29: ins 122186, del 122976, find 11951019
+Thread 30: ins 133109, del 133599, find 13106627
+Thread 31: ins 122361, del 122825, find 12068771
+Thread 32: ins 123590, del 123218, find 12085001
+Thread 33: ins 121671, del 122084, find 11998019
+Thread 34: ins 140905, del 140798, find 13813978
+Thread 35: ins 122199, del 121732, find 11956178
+Thread 36: ins 122563, del 122352, find 12011796
+Thread 37: ins 123267, del 123336, find 12091970
+Thread 38: ins 140086, del 140887, find 13715809
+Thread 39: ins 121718, del 120970, find 11921399
+Thread 40: ins 122149, del 122179, find 11992135
+Thread 41: ins 135309, del 134641, find 13271815
+Thread 42: ins 122247, del 122569, find 12002421
+Thread 43: ins 122350, del 122224, find 11988083
+Thread 44: ins 123004, del 123272, find 12083559
+Thread 45: ins 123136, del 124168, find 12079632
+Thread 46: ins 124467, del 124301, find 12199147
+Thread 47: ins 132772, del 132715, find 13006929
+List benchmark ends:
+  duration: 10000 ms
+  ops:      614345012 (61434501.200000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.012372 
+  abort:      7695814 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 622040826
+                        n_finish = 614345012
+                        n_aborts = 7695814
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 193834368
+             n_tvlog_best_effort = 9312
+                    n_tvlog_ckpt = 9503
+     n_tvlog_cpobj_written_bytes = 1714681088
+           n_tvlog_written_bytes = 2149604992
+         n_tvlog_reclaimed_bytes = 2149604992
+              n_tvlog_ckpt_bytes = 553588184
+                 n_oplog_reclaim = 2789
+           n_oplog_reclaimed_ops = 6047759
+         n_oplog_reclaimed_bytes = 387078912
+           n_oplog_written_bytes = 387684736
+           n_ckptlog_best_effort = 4985
+             n_ckptlog_writeback = 1200
+       n_ckptlog_reclaimed_bytes = 501546752
+       n_ckptlog_writeback_bytes = 334656
+                     n_qp_detect = 9339
+                        n_qp_nap = 9017
+-------------------------------------------------
+run bench-timestone u20 num thread 56
+List benchmark
+Test time:     10000
+Thread number: 56
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 122095, del 122518, find 12009186
+Thread 1: ins 123906, del 123936, find 12102451
+Thread 2: ins 123335, del 123285, find 12106461
+Thread 3: ins 122792, del 122789, find 12032228
+Thread 4: ins 122631, del 123112, find 11991454
+Thread 5: ins 123617, del 123538, find 12115716
+Thread 6: ins 129258, del 128819, find 12637285
+Thread 7: ins 123250, del 123429, find 12117685
+Thread 8: ins 123090, del 122977, find 12064497
+Thread 9: ins 122719, del 123358, find 12088076
+Thread 10: ins 129603, del 129529, find 12697159
+Thread 11: ins 121870, del 121707, find 11943285
+Thread 12: ins 129319, del 129529, find 12663459
+Thread 13: ins 138961, del 139501, find 13578233
+Thread 14: ins 126446, del 127195, find 12412170
+Thread 15: ins 123491, del 124000, find 12084821
+Thread 16: ins 137364, del 137236, find 13462816
+Thread 17: ins 123642, del 123443, find 12098210
+Thread 18: ins 122405, del 122481, find 11967232
+Thread 19: ins 122929, del 123290, find 12063533
+Thread 20: ins 127271, del 126673, find 12427926
+Thread 21: ins 108186, del 108407, find 10576093
+Thread 22: ins 122770, del 123057, find 12054946
+Thread 23: ins 135864, del 135410, find 13291295
+Thread 24: ins 121880, del 122182, find 11989340
+Thread 25: ins 122745, del 123115, find 12058556
+Thread 26: ins 121916, del 122088, find 11933002
+Thread 27: ins 126981, del 126572, find 12431646
+Thread 28: ins 123453, del 122637, find 12086426
+Thread 29: ins 139771, del 139851, find 13699867
+Thread 30: ins 130433, del 131187, find 12771645
+Thread 31: ins 122670, del 122505, find 11998630
+Thread 32: ins 122720, del 122311, find 12020445
+Thread 33: ins 122478, del 123117, find 11985360
+Thread 34: ins 122622, del 122582, find 12028529
+Thread 35: ins 129035, del 129525, find 12700460
+Thread 36: ins 123306, del 122980, find 12072853
+Thread 37: ins 122827, del 122427, find 12025095
+Thread 38: ins 122490, del 122493, find 11983228
+Thread 39: ins 122830, del 122690, find 12037059
+Thread 40: ins 126445, del 127195, find 12412090
+Thread 41: ins 122835, del 122809, find 12035847
+Thread 42: ins 122274, del 121861, find 11984314
+Thread 43: ins 122866, del 122868, find 12024504
+Thread 44: ins 123532, del 123871, find 12097797
+Thread 45: ins 124265, del 124336, find 12167563
+Thread 46: ins 122933, del 123701, find 12098875
+Thread 47: ins 123380, del 123306, find 12092014
+Thread 48: ins 122863, del 122706, find 12011239
+Thread 49: ins 122692, del 123142, find 12100151
+Thread 50: ins 121991, del 122172, find 11964124
+Thread 51: ins 123845, del 123513, find 12113763
+Thread 52: ins 133064, del 133484, find 13074845
+Thread 53: ins 118685, del 118550, find 11612922
+Thread 54: ins 123025, del 123637, find 12037277
+Thread 55: ins 122652, del 123555, find 12037513
+List benchmark ends:
+  duration: 10000 ms
+  ops:      698243701 (69824370.100000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.003750 
+  abort:      2628340 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 700872041
+                        n_finish = 698243701
+                        n_aborts = 2628340
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 219294528
+             n_tvlog_best_effort = 11592
+                    n_tvlog_ckpt = 10640
+     n_tvlog_cpobj_written_bytes = 1656320896
+           n_tvlog_written_bytes = 2432735232
+         n_tvlog_reclaimed_bytes = 2432735232
+              n_tvlog_ckpt_bytes = 605591408
+                 n_oplog_reclaim = 3415
+           n_oplog_reclaimed_ops = 6783792
+         n_oplog_reclaimed_bytes = 434187648
+           n_oplog_written_bytes = 438603392
+           n_ckptlog_best_effort = 5768
+             n_ckptlog_writeback = 1456
+       n_ckptlog_reclaimed_bytes = 552421888
+       n_ckptlog_writeback_bytes = 336864
+                     n_qp_detect = 8535
+                        n_qp_nap = 8198
+-------------------------------------------------
+run bench-timestone u20 num thread 64
+List benchmark
+Test time:     10000
+Thread number: 64
+Initial size:  10000
+Value range:   20000
+Update Ratio:  20/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 110664, del 110958, find 10894015
+Thread 1: ins 109112, del 108854, find 10689650
+Thread 2: ins 108795, del 108227, find 10674617
+Thread 3: ins 108563, del 108543, find 10658858
+Thread 4: ins 110133, del 110075, find 10784344
+Thread 5: ins 110384, del 110433, find 10804114
+Thread 6: ins 113031, del 113274, find 11113546
+Thread 7: ins 112966, del 112886, find 11074815
+Thread 8: ins 111183, del 110856, find 10905434
+Thread 9: ins 109081, del 109145, find 10677795
+Thread 10: ins 109561, del 109535, find 10715345
+Thread 11: ins 108754, del 108857, find 10626366
+Thread 12: ins 109237, del 108983, find 10709882
+Thread 13: ins 111126, del 110963, find 10903073
+Thread 14: ins 109827, del 109153, find 10757534
+Thread 15: ins 109203, del 109267, find 10707877
+Thread 16: ins 109222, del 109299, find 10742934
+Thread 17: ins 111568, del 111589, find 10939749
+Thread 18: ins 109540, del 109768, find 10760825
+Thread 19: ins 109457, del 108968, find 10706696
+Thread 20: ins 110338, del 110655, find 10791182
+Thread 21: ins 97337, del 97101, find 9515435
+Thread 22: ins 110603, del 111020, find 10879745
+Thread 23: ins 108957, del 109199, find 10665530
+Thread 24: ins 109063, del 109791, find 10680180
+Thread 25: ins 108299, del 108659, find 10659745
+Thread 26: ins 113754, del 113866, find 11124893
+Thread 27: ins 109673, del 109564, find 10738864
+Thread 28: ins 110024, del 109917, find 10751200
+Thread 29: ins 109355, del 109780, find 10693714
+Thread 30: ins 111867, del 111334, find 10922506
+Thread 31: ins 107952, del 108821, find 10582218
+Thread 32: ins 108864, del 108209, find 10674688
+Thread 33: ins 107826, del 108322, find 10637513
+Thread 34: ins 109305, del 109614, find 10756103
+Thread 35: ins 109925, del 109881, find 10782560
+Thread 36: ins 113157, del 113321, find 11070266
+Thread 37: ins 112230, del 112241, find 11005097
+Thread 38: ins 108558, del 108490, find 10631393
+Thread 39: ins 110931, del 111224, find 10904675
+Thread 40: ins 108693, del 109648, find 10669428
+Thread 41: ins 109475, del 108927, find 10703188
+Thread 42: ins 109358, del 109163, find 10709166
+Thread 43: ins 108766, del 108872, find 10691192
+Thread 44: ins 108563, del 108277, find 10603723
+Thread 45: ins 112181, del 112063, find 10995621
+Thread 46: ins 110281, del 109839, find 10792936
+Thread 47: ins 110268, del 110026, find 10790191
+Thread 48: ins 109959, del 110116, find 10768754
+Thread 49: ins 109762, del 109587, find 10733771
+Thread 50: ins 112596, del 112807, find 11069729
+Thread 51: ins 109556, del 109345, find 10728637
+Thread 52: ins 109173, del 110097, find 10705257
+Thread 53: ins 100065, del 100384, find 9839648
+Thread 54: ins 108368, del 108211, find 10613486
+Thread 55: ins 109980, del 109711, find 10768844
+Thread 56: ins 109428, del 109309, find 10725418
+Thread 57: ins 107925, del 108278, find 10600258
+Thread 58: ins 109124, del 109142, find 10669753
+Thread 59: ins 109149, del 110009, find 10708472
+Thread 60: ins 109297, del 109770, find 10744169
+Thread 61: ins 109650, del 109290, find 10732338
+Thread 62: ins 109619, del 110553, find 10747876
+Thread 63: ins 109277, del 108781, find 10718827
+List benchmark ends:
+  duration: 10000 ms
+  ops:      701168443 (70116844.300000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.068702 
+  abort:      51725708 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 752894151
+                        n_finish = 701168443
+                        n_aborts = 51725708
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 216028736
+             n_tvlog_best_effort = 13504
+                    n_tvlog_ckpt = 10048
+     n_tvlog_cpobj_written_bytes = 3032946304
+           n_tvlog_written_bytes = 2396179456
+         n_tvlog_reclaimed_bytes = 2396179456
+              n_tvlog_ckpt_bytes = 578621664
+                 n_oplog_reclaim = 6354
+           n_oplog_reclaimed_ops = 6718000
+         n_oplog_reclaimed_bytes = 429975744
+           n_oplog_written_bytes = 432076736
+           n_ckptlog_best_effort = 6269
+             n_ckptlog_writeback = 1535
+       n_ckptlog_reclaimed_bytes = 532351360
+       n_ckptlog_writeback_bytes = 416520
+                     n_qp_detect = 3258
+                        n_qp_nap = 2956
+-------------------------------------------------
+####################################
+Evaluation Tree 10K 
+run bench-timestone u200 num thread 1
+List benchmark
+Test time:     10000
+Thread number: 1
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 1204883, del 1202761, find 9624625
+List benchmark ends:
+  duration: 10000 ms
+  ops:      12032269 (1203226.900000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.000000 
+  abort:      2 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 12032271
+                        n_finish = 12032269
+                        n_aborts = 2
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 38511808
+             n_tvlog_best_effort = 2851
+                    n_tvlog_ckpt = 1584
+     n_tvlog_cpobj_written_bytes = 273225344
+           n_tvlog_written_bytes = 427292672
+         n_tvlog_reclaimed_bytes = 427292672
+              n_tvlog_ckpt_bytes = 266567608
+                 n_oplog_reclaim = 104
+           n_oplog_reclaimed_ops = 1202857
+         n_oplog_reclaimed_bytes = 76987520
+           n_oplog_written_bytes = 77029056
+           n_ckptlog_best_effort = 1022
+             n_ckptlog_writeback = 559
+       n_ckptlog_reclaimed_bytes = 212264704
+       n_ckptlog_writeback_bytes = 2257200
+                     n_qp_detect = 12234
+                        n_qp_nap = 8841
+-------------------------------------------------
+run bench-timestone u200 num thread 4
+List benchmark
+Test time:     10000
+Thread number: 4
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 942976, del 943561, find 7539644
+Thread 1: ins 942128, del 943057, find 7544200
+Thread 2: ins 957923, del 957336, find 7656749
+Thread 3: ins 938588, del 940592, find 7521644
+List benchmark ends:
+  duration: 10000 ms
+  ops:      37828398 (3782839.800000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.000593 
+  abort:      22432 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 37850830
+                        n_finish = 37828398
+                        n_aborts = 22432
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 121148160
+             n_tvlog_best_effort = 5890
+                    n_tvlog_ckpt = 5238
+     n_tvlog_cpobj_written_bytes = 860577792
+           n_tvlog_written_bytes = 1344547712
+         n_tvlog_reclaimed_bytes = 1344547712
+              n_tvlog_ckpt_bytes = 684167552
+                 n_oplog_reclaim = 740
+           n_oplog_reclaimed_ops = 3782709
+         n_oplog_reclaimed_bytes = 242108032
+           n_oplog_written_bytes = 242316480
+           n_ckptlog_best_effort = 1944
+             n_ckptlog_writeback = 128
+       n_ckptlog_reclaimed_bytes = 548027520
+       n_ckptlog_writeback_bytes = 211176
+                     n_qp_detect = 9799
+                        n_qp_nap = 7544
+-------------------------------------------------
+run bench-timestone u200 num thread 8
+List benchmark
+Test time:     10000
+Thread number: 8
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 871262, del 871131, find 6967939
+Thread 1: ins 876934, del 877064, find 7013245
+Thread 2: ins 878071, del 876923, find 7009761
+Thread 3: ins 875064, del 875403, find 7005647
+Thread 4: ins 884140, del 884822, find 7079977
+Thread 5: ins 873361, del 873226, find 6989794
+Thread 6: ins 881930, del 882068, find 7059513
+Thread 7: ins 888224, del 890003, find 7118257
+List benchmark ends:
+  duration: 10000 ms
+  ops:      70303759 (7030375.900000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.003538 
+  abort:      249594 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 70553353
+                        n_finish = 70303759
+                        n_aborts = 249594
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 225142272
+             n_tvlog_best_effort = 12576
+                    n_tvlog_ckpt = 9952
+     n_tvlog_cpobj_written_bytes = 1607344768
+           n_tvlog_written_bytes = 2498019840
+         n_tvlog_reclaimed_bytes = 2498019840
+              n_tvlog_ckpt_bytes = 1041922112
+                 n_oplog_reclaim = 2523
+           n_oplog_reclaimed_ops = 7018769
+         n_oplog_reclaimed_bytes = 449228416
+           n_oplog_written_bytes = 450310976
+           n_ckptlog_best_effort = 1224
+             n_ckptlog_writeback = 112
+       n_ckptlog_reclaimed_bytes = 858586240
+       n_ckptlog_writeback_bytes = 192144
+                     n_qp_detect = 12869
+                        n_qp_nap = 10971
+-------------------------------------------------
+run bench-timestone u200 num thread 16
+List benchmark
+Test time:     10000
+Thread number: 16
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 586329, del 585343, find 4689516
+Thread 1: ins 598436, del 598796, find 4789754
+Thread 2: ins 591557, del 590389, find 4731702
+Thread 3: ins 590049, del 589599, find 4717213
+Thread 4: ins 595814, del 595807, find 4771329
+Thread 5: ins 593947, del 593072, find 4740519
+Thread 6: ins 593566, del 594439, find 4749472
+Thread 7: ins 594216, del 593483, find 4753267
+Thread 8: ins 598179, del 597731, find 4779077
+Thread 9: ins 597954, del 597925, find 4786119
+Thread 10: ins 592995, del 593198, find 4745996
+Thread 11: ins 593794, del 593557, find 4749145
+Thread 12: ins 588678, del 590337, find 4719090
+Thread 13: ins 587946, del 587894, find 4710083
+Thread 14: ins 591859, del 593587, find 4735403
+Thread 15: ins 584944, del 585258, find 4681856
+List benchmark ends:
+  duration: 10000 ms
+  ops:      94810219 (9481021.900000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.030803 
+  abort:      3013292 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 97823511
+                        n_finish = 94810219
+                        n_aborts = 3013292
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 303342592
+             n_tvlog_best_effort = 16113
+                    n_tvlog_ckpt = 13537
+     n_tvlog_cpobj_written_bytes = 2264113024
+           n_tvlog_written_bytes = 3366394880
+         n_tvlog_reclaimed_bytes = 3366394880
+              n_tvlog_ckpt_bytes = 1163886696
+                 n_oplog_reclaim = 5753
+           n_oplog_reclaimed_ops = 9461123
+         n_oplog_reclaimed_bytes = 605548416
+           n_oplog_written_bytes = 606724480
+           n_ckptlog_best_effort = 2144
+             n_ckptlog_writeback = 593
+       n_ckptlog_reclaimed_bytes = 989461376
+       n_ckptlog_writeback_bytes = 189216
+                     n_qp_detect = 8375
+                        n_qp_nap = 7136
+-------------------------------------------------
+run bench-timestone u200 num thread 24
+List benchmark
+Test time:     10000
+Thread number: 24
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 385955, del 386195, find 3099146
+Thread 1: ins 391028, del 391540, find 3132171
+Thread 2: ins 380213, del 380938, find 3050089
+Thread 3: ins 379028, del 379234, find 3026382
+Thread 4: ins 377895, del 376659, find 3017071
+Thread 5: ins 387341, del 386714, find 3101324
+Thread 6: ins 382300, del 382800, find 3058089
+Thread 7: ins 388911, del 388056, find 3105825
+Thread 8: ins 387650, del 387815, find 3103155
+Thread 9: ins 388063, del 388435, find 3108398
+Thread 10: ins 389733, del 389462, find 3109136
+Thread 11: ins 390530, del 390212, find 3125151
+Thread 12: ins 375099, del 374829, find 2999741
+Thread 13: ins 381941, del 380607, find 3052729
+Thread 14: ins 390356, del 389997, find 3125255
+Thread 15: ins 375473, del 377253, find 3003661
+Thread 16: ins 388210, del 387563, find 3102413
+Thread 17: ins 372516, del 372369, find 2983270
+Thread 18: ins 386910, del 387165, find 3097650
+Thread 19: ins 376877, del 376946, find 3018323
+Thread 20: ins 379074, del 378708, find 3029995
+Thread 21: ins 376577, del 377914, find 3017149
+Thread 22: ins 371572, del 372363, find 2976733
+Thread 23: ins 378776, del 378934, find 3028911
+List benchmark ends:
+  duration: 10000 ms
+  ops:      91836503 (9183650.300000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.092075 
+  abort:      9313340 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 101149843
+                        n_finish = 91836503
+                        n_aborts = 9313340
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 293846720
+             n_tvlog_best_effort = 13274
+                    n_tvlog_ckpt = 13283
+     n_tvlog_cpobj_written_bytes = 2504526464
+           n_tvlog_written_bytes = 3260941568
+         n_tvlog_reclaimed_bytes = 3260941568
+              n_tvlog_ckpt_bytes = 975901656
+                 n_oplog_reclaim = 6921
+           n_oplog_reclaimed_ops = 9181318
+         n_oplog_reclaimed_bytes = 587639360
+           n_oplog_written_bytes = 587721792
+           n_ckptlog_best_effort = 3336
+             n_ckptlog_writeback = 1171
+       n_ckptlog_reclaimed_bytes = 853127936
+       n_ckptlog_writeback_bytes = 173376
+                     n_qp_detect = 5071
+                        n_qp_nap = 4281
+-------------------------------------------------
+run bench-timestone u200 num thread 32
+List benchmark
+Test time:     10000
+Thread number: 32
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 296234, del 296973, find 2377733
+Thread 1: ins 295305, del 295828, find 2363014
+Thread 2: ins 298202, del 297833, find 2382912
+Thread 3: ins 299321, del 299156, find 2395577
+Thread 4: ins 302843, del 302791, find 2426958
+Thread 5: ins 303812, del 303653, find 2433177
+Thread 6: ins 301594, del 302156, find 2415883
+Thread 7: ins 295150, del 294624, find 2358345
+Thread 8: ins 297887, del 297044, find 2382067
+Thread 9: ins 303142, del 301978, find 2420252
+Thread 10: ins 296289, del 297242, find 2376893
+Thread 11: ins 296651, del 296571, find 2375762
+Thread 12: ins 299122, del 298778, find 2395154
+Thread 13: ins 304371, del 304115, find 2436668
+Thread 14: ins 300400, del 299594, find 2399588
+Thread 15: ins 300824, del 300220, find 2404197
+Thread 16: ins 295191, del 295895, find 2365910
+Thread 17: ins 299543, del 298351, find 2381858
+Thread 18: ins 299174, del 298233, find 2388016
+Thread 19: ins 296866, del 296866, find 2376138
+Thread 20: ins 397988, del 397448, find 3180915
+Thread 21: ins 287837, del 288470, find 2302080
+Thread 22: ins 299785, del 300954, find 2402737
+Thread 23: ins 401942, del 401350, find 3212428
+Thread 24: ins 297101, del 297265, find 2374341
+Thread 25: ins 295168, del 295313, find 2363789
+Thread 26: ins 302054, del 302395, find 2411049
+Thread 27: ins 297373, del 296988, find 2376405
+Thread 28: ins 296748, del 297606, find 2375230
+Thread 29: ins 298653, del 297826, find 2386962
+Thread 30: ins 303077, del 303800, find 2432287
+Thread 31: ins 297155, del 296592, find 2376168
+List benchmark ends:
+  duration: 10001 ms
+  ops:      97561203 (9755144.785521/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.160864 
+  abort:      18702659 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 116263862
+                        n_finish = 97561203
+                        n_aborts = 18702659
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 302303040
+             n_tvlog_best_effort = 11648
+                    n_tvlog_ckpt = 13664
+     n_tvlog_cpobj_written_bytes = 2739881472
+           n_tvlog_written_bytes = 3353173504
+         n_tvlog_reclaimed_bytes = 3353173504
+              n_tvlog_ckpt_bytes = 914550928
+                 n_oplog_reclaim = 8104
+           n_oplog_reclaimed_ops = 9441466
+         n_oplog_reclaimed_bytes = 604289984
+           n_oplog_written_bytes = 604643136
+           n_ckptlog_best_effort = 4829
+             n_ckptlog_writeback = 1471
+       n_ckptlog_reclaimed_bytes = 817562368
+       n_ckptlog_writeback_bytes = 382968
+                     n_qp_detect = 3366
+                        n_qp_nap = 2755
+-------------------------------------------------
+run bench-timestone u200 num thread 40
+List benchmark
+Test time:     10000
+Thread number: 40
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 262190, del 261720, find 2091854
+Thread 1: ins 251110, del 250505, find 2004714
+Thread 2: ins 251049, del 251304, find 2011177
+Thread 3: ins 252180, del 252400, find 2020912
+Thread 4: ins 251821, del 251115, find 2015568
+Thread 5: ins 255880, del 255919, find 2045294
+Thread 6: ins 256204, del 256925, find 2054357
+Thread 7: ins 255803, del 254931, find 2044481
+Thread 8: ins 254061, del 253939, find 2033475
+Thread 9: ins 249624, del 249727, find 2001620
+Thread 10: ins 259722, del 259449, find 2072572
+Thread 11: ins 251322, del 250507, find 2000417
+Thread 12: ins 319060, del 318908, find 2554320
+Thread 13: ins 247628, del 247732, find 1981354
+Thread 14: ins 253854, del 254553, find 2033150
+Thread 15: ins 252399, del 252046, find 2015044
+Thread 16: ins 258897, del 259791, find 2068656
+Thread 17: ins 256886, del 256734, find 2049695
+Thread 18: ins 254279, del 252842, find 2027951
+Thread 19: ins 250342, del 249951, find 2003342
+Thread 20: ins 253712, del 253602, find 2024932
+Thread 21: ins 242692, del 243943, find 1939986
+Thread 22: ins 254489, del 254014, find 2034154
+Thread 23: ins 249994, del 249075, find 2004189
+Thread 24: ins 294393, del 294485, find 2349855
+Thread 25: ins 258950, del 260232, find 2079669
+Thread 26: ins 253443, del 254097, find 2027668
+Thread 27: ins 256284, del 256764, find 2054058
+Thread 28: ins 257273, del 256770, find 2055750
+Thread 29: ins 315606, del 315691, find 2527515
+Thread 30: ins 249994, del 250223, find 2001529
+Thread 31: ins 252448, del 252868, find 2021922
+Thread 32: ins 257123, del 256662, find 2057834
+Thread 33: ins 253808, del 253360, find 2028761
+Thread 34: ins 292472, del 292522, find 2334380
+Thread 35: ins 253723, del 253423, find 2030613
+Thread 36: ins 254455, del 254258, find 2037746
+Thread 37: ins 254436, del 254711, find 2034272
+Thread 38: ins 249383, del 249141, find 1997016
+Thread 39: ins 252738, del 252605, find 2022466
+List benchmark ends:
+  duration: 10000 ms
+  ops:      103495439 (10349543.900000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.228553 
+  abort:      30662071 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 134157510
+                        n_finish = 103495439
+                        n_aborts = 30662071
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 320637056
+             n_tvlog_best_effort = 13360
+                    n_tvlog_ckpt = 15077
+     n_tvlog_cpobj_written_bytes = 3279351040
+           n_tvlog_written_bytes = 3556285824
+         n_tvlog_reclaimed_bytes = 3556285824
+              n_tvlog_ckpt_bytes = 938625120
+                 n_oplog_reclaim = 9842
+           n_oplog_reclaimed_ops = 10019612
+         n_oplog_reclaimed_bytes = 641293120
+           n_oplog_written_bytes = 641315328
+           n_ckptlog_best_effort = 4996
+             n_ckptlog_writeback = 1429
+       n_ckptlog_reclaimed_bytes = 844031744
+       n_ckptlog_writeback_bytes = 198576
+                     n_qp_detect = 3119
+                        n_qp_nap = 2595
+-------------------------------------------------
+run bench-timestone u200 num thread 48
+List benchmark
+Test time:     10000
+Thread number: 48
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 235545, del 236431, find 1889745
+Thread 1: ins 232850, del 232275, find 1854389
+Thread 2: ins 233787, del 234280, find 1863828
+Thread 3: ins 232321, del 232491, find 1862968
+Thread 4: ins 233144, del 231858, find 1863440
+Thread 5: ins 232764, del 232556, find 1859338
+Thread 6: ins 237438, del 237297, find 1899356
+Thread 7: ins 233463, del 234126, find 1873045
+Thread 8: ins 234541, del 234825, find 1878788
+Thread 9: ins 233208, del 233342, find 1866956
+Thread 10: ins 239903, del 239610, find 1920318
+Thread 11: ins 236377, del 235649, find 1891035
+Thread 12: ins 239530, del 239009, find 1913748
+Thread 13: ins 232167, del 232396, find 1859353
+Thread 14: ins 236935, del 237311, find 1894902
+Thread 15: ins 233684, del 234915, find 1875461
+Thread 16: ins 234923, del 234193, find 1874473
+Thread 17: ins 233388, del 232850, find 1863123
+Thread 18: ins 233252, del 233454, find 1867810
+Thread 19: ins 232801, del 233028, find 1863095
+Thread 20: ins 242066, del 242732, find 1937414
+Thread 21: ins 232051, del 232988, find 1858887
+Thread 22: ins 237564, del 238246, find 1901481
+Thread 23: ins 233976, del 233945, find 1872896
+Thread 24: ins 230073, del 229462, find 1837807
+Thread 25: ins 240079, del 239962, find 1914655
+Thread 26: ins 234232, del 234121, find 1870925
+Thread 27: ins 237084, del 236726, find 1896829
+Thread 28: ins 238494, del 238520, find 1909730
+Thread 29: ins 235022, del 235124, find 1880162
+Thread 30: ins 234698, del 234260, find 1875349
+Thread 31: ins 235419, del 235857, find 1886722
+Thread 32: ins 233329, del 232902, find 1867377
+Thread 33: ins 234933, del 235357, find 1877514
+Thread 34: ins 231842, del 231998, find 1864535
+Thread 35: ins 234229, del 234506, find 1876516
+Thread 36: ins 234201, del 233693, find 1872763
+Thread 37: ins 235841, del 236491, find 1890527
+Thread 38: ins 232520, del 233065, find 1857464
+Thread 39: ins 234516, del 235392, find 1882229
+Thread 40: ins 241606, del 241694, find 1936917
+Thread 41: ins 233640, del 233891, find 1873662
+Thread 42: ins 236253, del 235486, find 1887534
+Thread 43: ins 232903, del 232489, find 1861180
+Thread 44: ins 234976, del 234934, find 1877768
+Thread 45: ins 240277, del 239679, find 1922473
+Thread 46: ins 233818, del 233797, find 1867266
+Thread 47: ins 233212, del 232711, find 1862336
+List benchmark ends:
+  duration: 10000 ms
+  ops:      112818888 (11281888.800000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.269774 
+  abort:      41679771 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 154498659
+                        n_finish = 112818888
+                        n_aborts = 41679771
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 360550208
+             n_tvlog_best_effort = 14880
+                    n_tvlog_ckpt = 16224
+     n_tvlog_cpobj_written_bytes = 4165945600
+           n_tvlog_written_bytes = 4001056256
+         n_tvlog_reclaimed_bytes = 4001056256
+              n_tvlog_ckpt_bytes = 1010447216
+                 n_oplog_reclaim = 11759
+           n_oplog_reclaimed_ops = 11263788
+         n_oplog_reclaimed_bytes = 720925376
+           n_oplog_written_bytes = 721144448
+           n_ckptlog_best_effort = 5801
+             n_ckptlog_writeback = 1726
+       n_ckptlog_reclaimed_bytes = 918036608
+       n_ckptlog_writeback_bytes = 491928
+                     n_qp_detect = 2799
+                        n_qp_nap = 2313
+-------------------------------------------------
+run bench-timestone u200 num thread 56
+List benchmark
+Test time:     10000
+Thread number: 56
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 205434, del 204558, find 1642973
+Thread 1: ins 203949, del 204353, find 1636008
+Thread 2: ins 201424, del 201523, find 1610657
+Thread 3: ins 207841, del 207095, find 1659729
+Thread 4: ins 205623, del 206058, find 1649433
+Thread 5: ins 209423, del 208909, find 1673767
+Thread 6: ins 205306, del 205892, find 1645765
+Thread 7: ins 202539, del 202297, find 1619834
+Thread 8: ins 202653, del 201945, find 1615622
+Thread 9: ins 207119, del 206110, find 1654082
+Thread 10: ins 208165, del 208383, find 1666903
+Thread 11: ins 204903, del 205128, find 1640115
+Thread 12: ins 202014, del 202047, find 1613708
+Thread 13: ins 202873, del 204077, find 1629759
+Thread 14: ins 208912, del 209812, find 1672150
+Thread 15: ins 208691, del 207809, find 1665950
+Thread 16: ins 202314, del 202363, find 1618247
+Thread 17: ins 203325, del 203795, find 1626777
+Thread 18: ins 202284, del 202498, find 1618554
+Thread 19: ins 200354, del 200157, find 1603425
+Thread 20: ins 200002, del 199654, find 1602640
+Thread 21: ins 200256, del 199967, find 1596150
+Thread 22: ins 204501, del 204480, find 1639443
+Thread 23: ins 202147, del 202269, find 1615702
+Thread 24: ins 200684, del 201154, find 1607401
+Thread 25: ins 202169, del 201917, find 1615523
+Thread 26: ins 202513, del 201744, find 1619769
+Thread 27: ins 206182, del 206898, find 1654135
+Thread 28: ins 203534, del 204085, find 1631293
+Thread 29: ins 203801, del 202958, find 1632266
+Thread 30: ins 207496, del 206840, find 1652055
+Thread 31: ins 209698, del 209021, find 1672818
+Thread 32: ins 208952, del 208218, find 1668679
+Thread 33: ins 202487, del 202382, find 1621944
+Thread 34: ins 201954, del 202224, find 1618516
+Thread 35: ins 205903, del 205720, find 1648339
+Thread 36: ins 205776, del 205902, find 1646013
+Thread 37: ins 208165, del 207940, find 1668335
+Thread 38: ins 202026, del 201934, find 1616459
+Thread 39: ins 204594, del 204605, find 1636323
+Thread 40: ins 207644, del 207821, find 1662713
+Thread 41: ins 201706, del 202207, find 1611302
+Thread 42: ins 203999, del 204124, find 1636724
+Thread 43: ins 200539, del 200140, find 1604631
+Thread 44: ins 206989, del 206490, find 1651791
+Thread 45: ins 203241, del 203257, find 1622157
+Thread 46: ins 202491, del 202120, find 1617508
+Thread 47: ins 205073, del 205535, find 1645205
+Thread 48: ins 203930, del 203702, find 1632593
+Thread 49: ins 204960, del 204822, find 1633430
+Thread 50: ins 203629, del 203526, find 1625154
+Thread 51: ins 204156, del 203242, find 1628598
+Thread 52: ins 203734, del 203776, find 1630204
+Thread 53: ins 201583, del 201701, find 1612684
+Thread 54: ins 210467, del 211114, find 1688048
+Thread 55: ins 202459, del 202703, find 1622142
+List benchmark ends:
+  duration: 10001 ms
+  ops:      114437732 (11442628.937106/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.278855 
+  abort:      44251211 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 158688943
+                        n_finish = 114437732
+                        n_aborts = 44251211
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 365821312
+             n_tvlog_best_effort = 13608
+                    n_tvlog_ckpt = 16520
+     n_tvlog_cpobj_written_bytes = 4369021056
+           n_tvlog_written_bytes = 4059823872
+         n_tvlog_reclaimed_bytes = 4059823872
+              n_tvlog_ckpt_bytes = 987460872
+                 n_oplog_reclaim = 12707
+           n_oplog_reclaimed_ops = 11431477
+         n_oplog_reclaimed_bytes = 731657536
+           n_oplog_written_bytes = 731682176
+           n_ckptlog_best_effort = 6656
+             n_ckptlog_writeback = 1688
+       n_ckptlog_reclaimed_bytes = 903405952
+       n_ckptlog_writeback_bytes = 172200
+                     n_qp_detect = 2249
+                        n_qp_nap = 1831
+-------------------------------------------------
+run bench-timestone u200 num thread 64
+List benchmark
+Test time:     10000
+Thread number: 64
+Initial size:  10000
+Value range:   20000
+Update Ratio:  200/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 183432, del 184033, find 1468378
+Thread 1: ins 188153, del 188005, find 1505464
+Thread 2: ins 189163, del 188599, find 1509568
+Thread 3: ins 186524, del 186830, find 1492851
+Thread 4: ins 183729, del 183643, find 1472005
+Thread 5: ins 186474, del 186399, find 1492920
+Thread 6: ins 184776, del 184620, find 1474005
+Thread 7: ins 183025, del 183020, find 1466354
+Thread 8: ins 183254, del 183765, find 1471214
+Thread 9: ins 190442, del 190479, find 1524137
+Thread 10: ins 183039, del 182349, find 1462673
+Thread 11: ins 187936, del 188560, find 1509927
+Thread 12: ins 189945, del 189619, find 1516823
+Thread 13: ins 188601, del 188944, find 1506100
+Thread 14: ins 185547, del 185213, find 1484468
+Thread 15: ins 227026, del 227082, find 1815527
+Thread 16: ins 184129, del 184390, find 1469715
+Thread 17: ins 185160, del 185958, find 1479464
+Thread 18: ins 184402, del 185088, find 1477275
+Thread 19: ins 188120, del 189875, find 1509462
+Thread 20: ins 191373, del 192180, find 1533478
+Thread 21: ins 182136, del 181809, find 1453011
+Thread 22: ins 184556, del 185567, find 1486037
+Thread 23: ins 190451, del 189737, find 1522521
+Thread 24: ins 183588, del 184451, find 1473958
+Thread 25: ins 183319, del 182862, find 1461510
+Thread 26: ins 182687, del 181842, find 1458013
+Thread 27: ins 186572, del 186759, find 1491570
+Thread 28: ins 183506, del 184009, find 1473162
+Thread 29: ins 186204, del 185903, find 1489438
+Thread 30: ins 182978, del 184012, find 1471707
+Thread 31: ins 188566, del 188736, find 1507088
+Thread 32: ins 189800, del 189357, find 1517460
+Thread 33: ins 184305, del 184971, find 1476729
+Thread 34: ins 227449, del 227445, find 1818723
+Thread 35: ins 184584, del 184348, find 1475580
+Thread 36: ins 189450, del 190465, find 1521895
+Thread 37: ins 184036, del 183231, find 1462716
+Thread 38: ins 184427, del 185215, find 1472266
+Thread 39: ins 183496, del 182899, find 1468224
+Thread 40: ins 183016, del 183542, find 1467113
+Thread 41: ins 184783, del 185181, find 1480294
+Thread 42: ins 185935, del 185319, find 1481428
+Thread 43: ins 187453, del 187705, find 1504505
+Thread 44: ins 186687, del 186999, find 1499198
+Thread 45: ins 184992, del 185382, find 1482170
+Thread 46: ins 185113, del 185106, find 1487948
+Thread 47: ins 185734, del 186062, find 1490091
+Thread 48: ins 189933, del 189987, find 1519785
+Thread 49: ins 195534, del 195609, find 1568680
+Thread 50: ins 186951, del 186780, find 1497014
+Thread 51: ins 183083, del 182602, find 1461444
+Thread 52: ins 184117, del 185610, find 1479122
+Thread 53: ins 180895, del 181256, find 1450382
+Thread 54: ins 184046, del 184530, find 1471531
+Thread 55: ins 185995, del 186171, find 1485054
+Thread 56: ins 184296, del 183740, find 1470812
+Thread 57: ins 182349, del 181750, find 1460365
+Thread 58: ins 188072, del 187583, find 1502306
+Thread 59: ins 188199, del 188214, find 1501944
+Thread 60: ins 182436, del 182650, find 1465632
+Thread 61: ins 184659, del 183995, find 1472608
+Thread 62: ins 182179, del 182490, find 1456815
+Thread 63: ins 182728, del 182744, find 1460447
+List benchmark ends:
+  duration: 10000 ms
+  ops:      119698925 (11969892.500000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.641646 
+  abort:      214325128 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 334024053
+                        n_finish = 119698925
+                        n_aborts = 214325128
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 376795136
+             n_tvlog_best_effort = 15488
+                    n_tvlog_ckpt = 17595
+     n_tvlog_cpobj_written_bytes = 9030561024
+           n_tvlog_written_bytes = 4181600256
+         n_tvlog_reclaimed_bytes = 4181600256
+              n_tvlog_ckpt_bytes = 1009377776
+                 n_oplog_reclaim = 15888
+           n_oplog_reclaimed_ops = 11762152
+         n_oplog_reclaimed_bytes = 752822336
+           n_oplog_written_bytes = 753637504
+           n_ckptlog_best_effort = 6720
+             n_ckptlog_writeback = 2038
+       n_ckptlog_reclaimed_bytes = 925341056
+       n_ckptlog_writeback_bytes = 230976
+                     n_qp_detect = 1265
+                        n_qp_nap = 854
+-------------------------------------------------
+####################################
+Evaluation Tree 10K 
+run bench-timestone u800 num thread 1
+List benchmark
+Test time:     10000
+Thread number: 1
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 1502013, del 1501762, find 752554
+List benchmark ends:
+  duration: 10000 ms
+  ops:      3756329 (375632.900000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.000001 
+  abort:      2 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 3756331
+                        n_finish = 3756329
+                        n_aborts = 2
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 48077184
+             n_tvlog_best_effort = 1826
+                    n_tvlog_ckpt = 1965
+     n_tvlog_cpobj_written_bytes = 340946048
+           n_tvlog_written_bytes = 533252224
+         n_tvlog_reclaimed_bytes = 533252224
+              n_tvlog_ckpt_bytes = 330373008
+                 n_oplog_reclaim = 135
+           n_oplog_reclaimed_ops = 1501189
+         n_oplog_reclaimed_bytes = 96081920
+           n_oplog_written_bytes = 96147840
+           n_ckptlog_best_effort = 1343
+             n_ckptlog_writeback = 623
+       n_ckptlog_reclaimed_bytes = 263007744
+       n_ckptlog_writeback_bytes = 2699040
+                     n_qp_detect = 5165
+                        n_qp_nap = 1925
+-------------------------------------------------
+run bench-timestone u800 num thread 4
+List benchmark
+Test time:     10000
+Thread number: 4
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 1169417, del 1163992, find 583630
+Thread 1: ins 1167445, del 1166479, find 582277
+Thread 2: ins 1178968, del 1178602, find 587505
+Thread 3: ins 1169324, del 1167999, find 584124
+List benchmark ends:
+  duration: 10000 ms
+  ops:      11699762 (1169976.200000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.007901 
+  abort:      93178 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 11792940
+                        n_finish = 11699762
+                        n_aborts = 93178
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 149771072
+             n_tvlog_best_effort = 6933
+                    n_tvlog_ckpt = 6588
+     n_tvlog_cpobj_written_bytes = 1065996928
+           n_tvlog_written_bytes = 1662030976
+         n_tvlog_reclaimed_bytes = 1662030976
+              n_tvlog_ckpt_bytes = 835703632
+                 n_oplog_reclaim = 1514
+           n_oplog_reclaimed_ops = 4676325
+         n_oplog_reclaimed_bytes = 299302976
+           n_oplog_written_bytes = 299556480
+           n_ckptlog_best_effort = 2335
+             n_ckptlog_writeback = 100
+       n_ckptlog_reclaimed_bytes = 670226432
+       n_ckptlog_writeback_bytes = 221256
+                     n_qp_detect = 6558
+                        n_qp_nap = 3726
+-------------------------------------------------
+run bench-timestone u800 num thread 8
+List benchmark
+Test time:     10000
+Thread number: 8
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 1139065, del 1137267, find 569286
+Thread 1: ins 1112653, del 1112561, find 555696
+Thread 2: ins 1105600, del 1108341, find 553821
+Thread 3: ins 1138588, del 1137280, find 568783
+Thread 4: ins 1130349, del 1131533, find 566532
+Thread 5: ins 1113529, del 1114535, find 558541
+Thread 6: ins 1129397, del 1127460, find 565167
+Thread 7: ins 1121243, del 1123822, find 561662
+List benchmark ends:
+  duration: 10000 ms
+  ops:      22482711 (2248271.100000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.043286 
+  abort:      1017223 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 23499934
+                        n_finish = 22482711
+                        n_aborts = 1017223
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 287740096
+             n_tvlog_best_effort = 19729
+                    n_tvlog_ckpt = 13136
+     n_tvlog_cpobj_written_bytes = 2090836480
+           n_tvlog_written_bytes = 3193258752
+         n_tvlog_reclaimed_bytes = 3193258752
+              n_tvlog_ckpt_bytes = 1391521936
+                 n_oplog_reclaim = 5631
+           n_oplog_reclaimed_ops = 8982216
+         n_oplog_reclaimed_bytes = 574896576
+           n_oplog_written_bytes = 575516416
+           n_ckptlog_best_effort = 1656
+             n_ckptlog_writeback = 120
+       n_ckptlog_reclaimed_bytes = 1138828800
+       n_ckptlog_writeback_bytes = 256416
+                     n_qp_detect = 8975
+                        n_qp_nap = 6059
+-------------------------------------------------
+run bench-timestone u800 num thread 16
+List benchmark
+Test time:     10000
+Thread number: 16
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 642786, del 643804, find 320879
+Thread 1: ins 653614, del 654065, find 326848
+Thread 2: ins 646229, del 647384, find 323314
+Thread 3: ins 640928, del 642314, find 320151
+Thread 4: ins 644312, del 645034, find 322245
+Thread 5: ins 637668, del 638702, find 318522
+Thread 6: ins 640989, del 640766, find 319979
+Thread 7: ins 647293, del 646920, find 324248
+Thread 8: ins 642383, del 643839, find 321660
+Thread 9: ins 644098, del 643761, find 322321
+Thread 10: ins 650279, del 651224, find 325705
+Thread 11: ins 643595, del 644149, find 320740
+Thread 12: ins 640907, del 641044, find 321256
+Thread 13: ins 634775, del 633237, find 317058
+Thread 14: ins 650754, del 651063, find 323538
+Thread 15: ins 649103, del 650065, find 323963
+List benchmark ends:
+  duration: 10000 ms
+  ops:      25779511 (2577951.100000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.108430 
+  abort:      3135218 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 28914729
+                        n_finish = 25779511
+                        n_aborts = 3135218
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 329879168
+             n_tvlog_best_effort = 21952
+                    n_tvlog_ckpt = 14930
+     n_tvlog_cpobj_written_bytes = 2476388864
+           n_tvlog_written_bytes = 3660671104
+         n_tvlog_reclaimed_bytes = 3660671104
+              n_tvlog_ckpt_bytes = 1314695736
+                 n_oplog_reclaim = 9963
+           n_oplog_reclaimed_ops = 10305906
+         n_oplog_reclaimed_bytes = 659617792
+           n_oplog_written_bytes = 659797312
+           n_ckptlog_best_effort = 2416
+             n_ckptlog_writeback = 677
+       n_ckptlog_reclaimed_bytes = 1110041472
+       n_ckptlog_writeback_bytes = 177600
+                     n_qp_detect = 4891
+                        n_qp_nap = 3228
+-------------------------------------------------
+run bench-timestone u800 num thread 24
+List benchmark
+Test time:     10000
+Thread number: 24
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 374710, del 375947, find 187940
+Thread 1: ins 392316, del 393848, find 196722
+Thread 2: ins 393444, del 394776, find 197423
+Thread 3: ins 388681, del 388959, find 194963
+Thread 4: ins 372764, del 373424, find 186031
+Thread 5: ins 397184, del 398083, find 198560
+Thread 6: ins 369185, del 368085, find 185239
+Thread 7: ins 383879, del 383914, find 192356
+Thread 8: ins 387995, del 389053, find 193831
+Thread 9: ins 378333, del 378944, find 189497
+Thread 10: ins 386513, del 387511, find 193020
+Thread 11: ins 373007, del 372861, find 186732
+Thread 12: ins 396624, del 397420, find 197988
+Thread 13: ins 378071, del 379686, find 189152
+Thread 14: ins 369081, del 369715, find 184075
+Thread 15: ins 366100, del 367098, find 183293
+Thread 16: ins 371978, del 372957, find 186133
+Thread 17: ins 394553, del 393574, find 196858
+Thread 18: ins 372437, del 371104, find 186235
+Thread 19: ins 372394, del 372134, find 185787
+Thread 20: ins 368671, del 368676, find 184306
+Thread 21: ins 371823, del 371925, find 186034
+Thread 22: ins 372671, del 372183, find 185870
+Thread 23: ins 370887, del 371483, find 185383
+List benchmark ends:
+  duration: 10000 ms
+  ops:      22770089 (2277008.900000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.415316 
+  abort:      16174151 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 38944240
+                        n_finish = 22770089
+                        n_aborts = 16174151
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 291457920
+             n_tvlog_best_effort = 14064
+                    n_tvlog_ckpt = 13320
+     n_tvlog_cpobj_written_bytes = 2783814784
+           n_tvlog_written_bytes = 3234385280
+         n_tvlog_reclaimed_bytes = 3234385280
+              n_tvlog_ckpt_bytes = 1007122888
+                 n_oplog_reclaim = 9749
+           n_oplog_reclaimed_ops = 9102561
+         n_oplog_reclaimed_bytes = 582598592
+           n_oplog_written_bytes = 582942208
+           n_ckptlog_best_effort = 4176
+             n_ckptlog_writeback = 1414
+       n_ckptlog_reclaimed_bytes = 873820800
+       n_ckptlog_writeback_bytes = 321456
+                     n_qp_detect = 2593
+                        n_qp_nap = 1726
+-------------------------------------------------
+run bench-timestone u800 num thread 32
+List benchmark
+Test time:     10000
+Thread number: 32
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 312434, del 312973, find 156187
+Thread 1: ins 302373, del 304277, find 151977
+Thread 2: ins 308023, del 308104, find 153880
+Thread 3: ins 307797, del 308813, find 154094
+Thread 4: ins 304206, del 304890, find 152306
+Thread 5: ins 319406, del 320212, find 159885
+Thread 6: ins 311776, del 312278, find 156573
+Thread 7: ins 304482, del 303079, find 151635
+Thread 8: ins 311297, del 310509, find 155872
+Thread 9: ins 304418, del 303956, find 151638
+Thread 10: ins 314951, del 314120, find 157371
+Thread 11: ins 308068, del 306709, find 153018
+Thread 12: ins 312186, del 310745, find 155415
+Thread 13: ins 309660, del 309920, find 155167
+Thread 14: ins 304968, del 306781, find 152719
+Thread 15: ins 306999, del 306677, find 153826
+Thread 16: ins 303887, del 304865, find 151414
+Thread 17: ins 306527, del 307471, find 153935
+Thread 18: ins 311949, del 312214, find 156268
+Thread 19: ins 410668, del 411845, find 205254
+Thread 20: ins 311695, del 310493, find 155634
+Thread 21: ins 301504, del 300856, find 150746
+Thread 22: ins 303064, del 304298, find 151944
+Thread 23: ins 316398, del 315012, find 157629
+Thread 24: ins 406572, del 407735, find 203175
+Thread 25: ins 308513, del 308748, find 153461
+Thread 26: ins 316621, del 315792, find 158129
+Thread 27: ins 316791, del 317098, find 158958
+Thread 28: ins 304522, del 305681, find 152962
+Thread 29: ins 305444, del 303807, find 151801
+Thread 30: ins 319705, del 320342, find 160512
+Thread 31: ins 315052, del 315576, find 157714
+List benchmark ends:
+  duration: 10000 ms
+  ops:      25258931 (2525893.100000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.500688 
+  abort:      25328502 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 50587433
+                        n_finish = 25258931
+                        n_aborts = 25328502
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 313003328
+             n_tvlog_best_effort = 14817
+                    n_tvlog_ckpt = 14430
+     n_tvlog_cpobj_written_bytes = 3023555712
+           n_tvlog_written_bytes = 3473065344
+         n_tvlog_reclaimed_bytes = 3473065344
+              n_tvlog_ckpt_bytes = 1000742536
+                 n_oplog_reclaim = 11740
+           n_oplog_reclaimed_ops = 9775102
+         n_oplog_reclaimed_bytes = 625643648
+           n_oplog_written_bytes = 626038848
+           n_ckptlog_best_effort = 4506
+             n_ckptlog_writeback = 1657
+       n_ckptlog_reclaimed_bytes = 882243328
+       n_ckptlog_writeback_bytes = 218520
+                     n_qp_detect = 2193
+                        n_qp_nap = 1499
+-------------------------------------------------
+run bench-timestone u800 num thread 40
+List benchmark
+Test time:     10000
+Thread number: 40
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 243707, del 244275, find 122230
+Thread 1: ins 239796, del 239860, find 119467
+Thread 2: ins 240551, del 241362, find 119946
+Thread 3: ins 245010, del 245416, find 122486
+Thread 4: ins 242945, del 242267, find 121131
+Thread 5: ins 241876, del 242422, find 121953
+Thread 6: ins 246307, del 245530, find 123132
+Thread 7: ins 250035, del 249938, find 125124
+Thread 8: ins 240579, del 239721, find 119791
+Thread 9: ins 240659, del 241286, find 120627
+Thread 10: ins 244273, del 244427, find 121649
+Thread 11: ins 245339, del 243494, find 121986
+Thread 12: ins 247984, del 248754, find 124370
+Thread 13: ins 243716, del 242587, find 121405
+Thread 14: ins 245783, del 245292, find 123431
+Thread 15: ins 244319, del 244223, find 122377
+Thread 16: ins 244263, del 244939, find 122135
+Thread 17: ins 247982, del 249101, find 124128
+Thread 18: ins 245818, del 245574, find 124046
+Thread 19: ins 240502, del 240814, find 120581
+Thread 20: ins 247411, del 245781, find 123784
+Thread 21: ins 242152, del 242213, find 120979
+Thread 22: ins 249550, del 250854, find 125327
+Thread 23: ins 240924, del 241064, find 120183
+Thread 24: ins 242510, del 243110, find 121687
+Thread 25: ins 251499, del 250689, find 125851
+Thread 26: ins 247795, del 247686, find 123874
+Thread 27: ins 243793, del 243155, find 121752
+Thread 28: ins 245675, del 246543, find 122833
+Thread 29: ins 250146, del 249681, find 124542
+Thread 30: ins 242047, del 242846, find 121008
+Thread 31: ins 248998, del 248773, find 123816
+Thread 32: ins 250486, del 248779, find 125287
+Thread 33: ins 240492, del 241364, find 120085
+Thread 34: ins 248662, del 246327, find 123401
+Thread 35: ins 246972, del 248174, find 124037
+Thread 36: ins 241105, del 241697, find 120942
+Thread 37: ins 243036, del 244175, find 121968
+Thread 38: ins 238897, del 238826, find 120094
+Thread 39: ins 251808, del 253006, find 126128
+List benchmark ends:
+  duration: 10000 ms
+  ops:      24491000 (2449100.000000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.592842 
+  abort:      35660076 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 60151076
+                        n_finish = 24491000
+                        n_aborts = 35660076
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 313117568
+             n_tvlog_best_effort = 11000
+                    n_tvlog_ckpt = 14320
+     n_tvlog_cpobj_written_bytes = 3600075776
+           n_tvlog_written_bytes = 3474746240
+         n_tvlog_reclaimed_bytes = 3474746240
+              n_tvlog_ckpt_bytes = 926735928
+                 n_oplog_reclaim = 11765
+           n_oplog_reclaimed_ops = 9764262
+         n_oplog_reclaimed_bytes = 624949568
+           n_oplog_written_bytes = 626264448
+           n_ckptlog_best_effort = 5320
+             n_ckptlog_writeback = 1958
+       n_ckptlog_reclaimed_bytes = 830408832
+       n_ckptlog_writeback_bytes = 260064
+                     n_qp_detect = 1460
+                        n_qp_nap = 951
+-------------------------------------------------
+run bench-timestone u800 num thread 48
+List benchmark
+Test time:     10000
+Thread number: 48
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 242015, del 243478, find 121193
+Thread 1: ins 250353, del 251350, find 124277
+Thread 2: ins 254599, del 251969, find 126856
+Thread 3: ins 238703, del 237998, find 119161
+Thread 4: ins 242097, del 241671, find 120981
+Thread 5: ins 245765, del 246614, find 123185
+Thread 6: ins 249814, del 250266, find 125673
+Thread 7: ins 241350, del 241485, find 120506
+Thread 8: ins 241569, del 240963, find 120965
+Thread 9: ins 247450, del 246338, find 123164
+Thread 10: ins 249443, del 248549, find 124138
+Thread 11: ins 244007, del 244960, find 121409
+Thread 12: ins 242966, del 242247, find 121058
+Thread 13: ins 251529, del 250412, find 125446
+Thread 14: ins 242196, del 241816, find 120970
+Thread 15: ins 244191, del 243545, find 122604
+Thread 16: ins 244421, del 243359, find 122229
+Thread 17: ins 241170, del 241197, find 120817
+Thread 18: ins 243066, del 241931, find 121946
+Thread 19: ins 236635, del 235594, find 118490
+Thread 20: ins 242495, del 243198, find 121622
+Thread 21: ins 240774, del 240755, find 120638
+Thread 22: ins 247133, del 248044, find 124742
+Thread 23: ins 242576, del 242703, find 121790
+Thread 24: ins 244019, del 244907, find 122336
+Thread 25: ins 248878, del 248323, find 124155
+Thread 26: ins 251027, del 249495, find 125308
+Thread 27: ins 247691, del 246309, find 124836
+Thread 28: ins 248996, del 249944, find 124816
+Thread 29: ins 247575, del 245792, find 123122
+Thread 30: ins 242483, del 242536, find 121747
+Thread 31: ins 248850, del 249788, find 123973
+Thread 32: ins 239727, del 241212, find 120024
+Thread 33: ins 243039, del 244576, find 121537
+Thread 34: ins 247645, del 249447, find 124012
+Thread 35: ins 242543, del 243027, find 121684
+Thread 36: ins 246987, del 247517, find 123809
+Thread 37: ins 240955, del 240881, find 121371
+Thread 38: ins 244241, del 244526, find 121766
+Thread 39: ins 243237, del 243210, find 121315
+Thread 40: ins 248942, del 250758, find 125066
+Thread 41: ins 245508, del 246303, find 122957
+Thread 42: ins 244543, del 245027, find 122285
+Thread 43: ins 249967, del 250556, find 125587
+Thread 44: ins 241002, del 241084, find 120424
+Thread 45: ins 240133, del 240223, find 120313
+Thread 46: ins 249841, del 250682, find 124820
+Thread 47: ins 248875, del 247764, find 124212
+List benchmark ends:
+  duration: 10000 ms
+  ops:      29412685 (2941268.500000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.753036 
+  abort:      89684413 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 119097098
+                        n_finish = 29412685
+                        n_aborts = 89684413
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 375965184
+             n_tvlog_best_effort = 16752
+                    n_tvlog_ckpt = 17376
+     n_tvlog_cpobj_written_bytes = 5705868160
+           n_tvlog_written_bytes = 4172866176
+         n_tvlog_reclaimed_bytes = 4172866176
+              n_tvlog_ckpt_bytes = 1082337768
+                 n_oplog_reclaim = 15907
+           n_oplog_reclaimed_ops = 11746984
+         n_oplog_reclaimed_bytes = 751851264
+           n_oplog_written_bytes = 751974208
+           n_ckptlog_best_effort = 5994
+             n_ckptlog_writeback = 1921
+       n_ckptlog_reclaimed_bytes = 975202048
+       n_ckptlog_writeback_bytes = 215928
+                     n_qp_detect = 1624
+                        n_qp_nap = 1068
+-------------------------------------------------
+run bench-timestone u800 num thread 56
+List benchmark
+Test time:     10000
+Thread number: 56
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 205654, del 206423, find 102715
+Thread 1: ins 205864, del 207276, find 102498
+Thread 2: ins 213340, del 214235, find 107018
+Thread 3: ins 202180, del 202693, find 101318
+Thread 4: ins 206594, del 206601, find 103136
+Thread 5: ins 207931, del 208075, find 103502
+Thread 6: ins 208647, del 207535, find 104166
+Thread 7: ins 207331, del 208216, find 104153
+Thread 8: ins 209854, del 209659, find 104896
+Thread 9: ins 207235, del 205814, find 103345
+Thread 10: ins 210144, del 210137, find 104240
+Thread 11: ins 217430, del 215377, find 108168
+Thread 12: ins 210915, del 210650, find 104927
+Thread 13: ins 212761, del 213466, find 106818
+Thread 14: ins 213638, del 214243, find 106853
+Thread 15: ins 209519, del 209304, find 104883
+Thread 16: ins 214292, del 214096, find 106976
+Thread 17: ins 215943, del 216141, find 107322
+Thread 18: ins 205794, del 206091, find 103507
+Thread 19: ins 210253, del 209065, find 104543
+Thread 20: ins 211467, del 211627, find 105467
+Thread 21: ins 206709, del 204909, find 103005
+Thread 22: ins 212934, del 212413, find 106117
+Thread 23: ins 215386, del 216404, find 108140
+Thread 24: ins 212300, del 211878, find 106108
+Thread 25: ins 205419, del 205838, find 102902
+Thread 26: ins 207051, del 206720, find 103614
+Thread 27: ins 210706, del 210720, find 105990
+Thread 28: ins 207610, del 206975, find 103293
+Thread 29: ins 206064, del 205245, find 102805
+Thread 30: ins 213933, del 213604, find 107310
+Thread 31: ins 210166, del 209356, find 104629
+Thread 32: ins 204948, del 205096, find 102688
+Thread 33: ins 206189, del 206579, find 102978
+Thread 34: ins 208340, del 209500, find 104585
+Thread 35: ins 204900, del 206114, find 102705
+Thread 36: ins 205929, del 207690, find 103204
+Thread 37: ins 208060, del 208556, find 104037
+Thread 38: ins 218007, del 216589, find 108682
+Thread 39: ins 209457, del 209218, find 104955
+Thread 40: ins 214076, del 213121, find 106479
+Thread 41: ins 205788, del 206122, find 103113
+Thread 42: ins 207337, del 207824, find 104132
+Thread 43: ins 217262, del 216342, find 108438
+Thread 44: ins 214070, del 213768, find 107004
+Thread 45: ins 207819, del 208303, find 103875
+Thread 46: ins 212863, del 213956, find 106690
+Thread 47: ins 204993, del 203891, find 102044
+Thread 48: ins 213901, del 213899, find 107155
+Thread 49: ins 215649, del 215854, find 108629
+Thread 50: ins 206027, del 206258, find 103317
+Thread 51: ins 206680, del 206558, find 103267
+Thread 52: ins 211321, del 209805, find 105514
+Thread 53: ins 211826, del 211407, find 105460
+Thread 54: ins 207993, del 207161, find 104569
+Thread 55: ins 207593, del 206402, find 102553
+List benchmark ends:
+  duration: 10000 ms
+  ops:      29357328 (2935732.800000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.784259 
+  abort:      106719430 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 136076758
+                        n_finish = 29357328
+                        n_aborts = 106719430
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 375097792
+             n_tvlog_best_effort = 15008
+                    n_tvlog_ckpt = 17123
+     n_tvlog_cpobj_written_bytes = 6418075392
+           n_tvlog_written_bytes = 4163323136
+         n_tvlog_reclaimed_bytes = 4163323136
+              n_tvlog_ckpt_bytes = 1025679056
+                 n_oplog_reclaim = 15149
+           n_oplog_reclaimed_ops = 11717476
+         n_oplog_reclaimed_bytes = 749962240
+           n_oplog_written_bytes = 750242176
+           n_ckptlog_best_effort = 6594
+             n_ckptlog_writeback = 1979
+       n_ckptlog_reclaimed_bytes = 935125632
+       n_ckptlog_writeback_bytes = 179520
+                     n_qp_detect = 1262
+                        n_qp_nap = 804
+-------------------------------------------------
+run bench-timestone u800 num thread 64
+List benchmark
+Test time:     10000
+Thread number: 64
+Initial size:  10000
+Value range:   20000
+Update Ratio:  800/1000
+Zipf dist:     0
+Zipf dist val: 0.000000
+STARTING THREADS...
+STOPPING THREADS...
+Thread 0: ins 195271, del 194554, find 97144
+Thread 1: ins 194015, del 193265, find 97217
+Thread 2: ins 195096, del 194659, find 97116
+Thread 3: ins 194975, del 194757, find 97436
+Thread 4: ins 193837, del 194217, find 96842
+Thread 5: ins 194622, del 194193, find 96851
+Thread 6: ins 193711, del 193174, find 97253
+Thread 7: ins 192910, del 191825, find 96160
+Thread 8: ins 191909, del 193803, find 96344
+Thread 9: ins 197748, del 198614, find 98775
+Thread 10: ins 195616, del 194534, find 97506
+Thread 11: ins 200567, del 201450, find 100356
+Thread 12: ins 192022, del 192720, find 96313
+Thread 13: ins 193254, del 192522, find 96570
+Thread 14: ins 192039, del 191896, find 96340
+Thread 15: ins 193370, del 193096, find 96146
+Thread 16: ins 197886, del 197202, find 98771
+Thread 17: ins 192123, del 192696, find 96223
+Thread 18: ins 193337, del 192452, find 96395
+Thread 19: ins 194470, del 194126, find 96662
+Thread 20: ins 193824, del 192826, find 96282
+Thread 21: ins 194220, del 194755, find 97325
+Thread 22: ins 192218, del 193312, find 96854
+Thread 23: ins 199087, del 198363, find 99509
+Thread 24: ins 195357, del 195844, find 97736
+Thread 25: ins 200524, del 200445, find 99517
+Thread 26: ins 200831, del 200793, find 99720
+Thread 27: ins 198492, del 198995, find 99394
+Thread 28: ins 195956, del 196499, find 98033
+Thread 29: ins 195753, del 194794, find 97913
+Thread 30: ins 199375, del 197096, find 98936
+Thread 31: ins 193043, del 193218, find 96295
+Thread 32: ins 196397, del 196177, find 97789
+Thread 33: ins 192975, del 192997, find 96592
+Thread 34: ins 194920, del 195643, find 97298
+Thread 35: ins 194417, del 195817, find 97560
+Thread 36: ins 194981, del 195147, find 97773
+Thread 37: ins 192571, del 192023, find 96688
+Thread 38: ins 201186, del 200878, find 100523
+Thread 39: ins 203441, del 203267, find 101759
+Thread 40: ins 191582, del 191621, find 95402
+Thread 41: ins 203124, del 202976, find 101170
+Thread 42: ins 201920, del 201966, find 101283
+Thread 43: ins 192931, del 193054, find 96057
+Thread 44: ins 194209, del 194792, find 96736
+Thread 45: ins 194301, del 194693, find 96961
+Thread 46: ins 191091, del 190923, find 95399
+Thread 47: ins 198529, del 198067, find 99498
+Thread 48: ins 197113, del 197279, find 98719
+Thread 49: ins 193327, del 192409, find 95490
+Thread 50: ins 194876, del 195084, find 97441
+Thread 51: ins 191923, del 192287, find 96002
+Thread 52: ins 195585, del 194809, find 97728
+Thread 53: ins 201218, del 200572, find 100587
+Thread 54: ins 192138, del 192334, find 96069
+Thread 55: ins 195483, del 196205, find 97891
+Thread 56: ins 194560, del 194938, find 96942
+Thread 57: ins 192462, del 190368, find 95972
+Thread 58: ins 194560, del 194757, find 97340
+Thread 59: ins 201120, del 201669, find 100585
+Thread 60: ins 201641, del 202316, find 100658
+Thread 61: ins 198892, del 198337, find 99366
+Thread 62: ins 197852, del 197294, find 98619
+Thread 63: ins 192821, del 193613, find 96959
+List benchmark ends:
+  duration: 10000 ms
+  ops:      31293401 (3129340.100000/s)
+  txn:      0 (0.000000/s)
+  abort_ratio:      0.886570 
+  abort:      244588866 
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 1048576
+[0m[32m  TS_TVLOG_LOW_MARK = 524288
+[0m[32m  TS_TVLOG_HIGH_MARK = 786432
+[0m[32m  TS_OPLOG_SIZE = 1048576
+[0m[32m  TS_CKPTLOG_SIZE = 4194304
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 275882267
+                        n_finish = 31293401
+                        n_aborts = 244588866
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 399857152
+             n_tvlog_best_effort = 15808
+                    n_tvlog_ckpt = 18560
+     n_tvlog_cpobj_written_bytes = 10766392192
+           n_tvlog_written_bytes = 4438004352
+         n_tvlog_reclaimed_bytes = 4438004352
+              n_tvlog_ckpt_bytes = 1073211504
+                 n_oplog_reclaim = 17776
+           n_oplog_reclaimed_ops = 12486647
+         n_oplog_reclaimed_bytes = 799191680
+           n_oplog_written_bytes = 799755008
+           n_ckptlog_best_effort = 7011
+             n_ckptlog_writeback = 2180
+       n_ckptlog_reclaimed_bytes = 984207488
+       n_ckptlog_writeback_bytes = 426384
+                     n_qp_detect = 1013
+                        n_qp_nap = 565
+-------------------------------------------------
