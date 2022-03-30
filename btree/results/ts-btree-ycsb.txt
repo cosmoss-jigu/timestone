@@ -1,0 +1,892 @@
+####################################
+####################################
+Evaluation Btree 2M, WA 
+run Btree WA  2M keys num thread 1
+BtreeTSS, workloada, randint, zipfian, threads 1
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.00871788 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 0	0.141215 ops/usec
+t_failed_reads= 8	t_failed_updates= 16
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 4000009
+                        n_finish = 4000000
+                        n_aborts = 9
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 13460
+                    n_tvlog_ckpt = 10244
+     n_tvlog_cpobj_written_bytes = 24025563840
+           n_tvlog_written_bytes = 24409308736
+         n_tvlog_reclaimed_bytes = 24409308736
+              n_tvlog_ckpt_bytes = 43571329272
+                 n_oplog_reclaim = 37
+           n_oplog_reclaimed_ops = 2984368
+         n_oplog_reclaimed_bytes = 191000960
+           n_oplog_written_bytes = 191892352
+           n_ckptlog_best_effort = 4171
+             n_ckptlog_writeback = 5992
+       n_ckptlog_reclaimed_bytes = 23237804352
+       n_ckptlog_writeback_bytes = 1902284140
+                     n_qp_detect = 72278
+                        n_qp_nap = 52478
+-------------------------------------------------
+run Btree WA  2M keys num thread 4
+run Btree WA  2M keys num thread 8
+run Btree WA  2M keys num thread 16
+BtreeTSS, workloada, randint, zipfian, threads 16
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0198061 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 0	2.0981 ops/usec
+t_failed_reads= 0	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 7597798
+                        n_finish = 4000000
+                        n_aborts = 3597798
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 21316
+                    n_tvlog_ckpt = 13937
+     n_tvlog_cpobj_written_bytes = 24031488000
+           n_tvlog_written_bytes = 24408366080
+         n_tvlog_reclaimed_bytes = 24408366080
+              n_tvlog_ckpt_bytes = 35243073744
+                 n_oplog_reclaim = 5218
+           n_oplog_reclaimed_ops = 2677953
+         n_oplog_reclaimed_bytes = 171388992
+           n_oplog_written_bytes = 191891968
+           n_ckptlog_best_effort = 5655
+             n_ckptlog_writeback = 7550
+       n_ckptlog_reclaimed_bytes = 18796109120
+       n_ckptlog_writeback_bytes = 243139868
+                     n_qp_detect = 9631
+                        n_qp_nap = 7820
+-------------------------------------------------
+run Btree WA  2M keys num thread 24
+BtreeTSS, workloada, randint, zipfian, threads 24
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0192208 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 0	2.05885 ops/usec
+t_failed_reads= 2	t_failed_updates= 3
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 11220071
+                        n_finish = 3999984
+                        n_aborts = 7220087
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 23079
+                    n_tvlog_ckpt = 14060
+     n_tvlog_cpobj_written_bytes = 24040458432
+           n_tvlog_written_bytes = 24414329856
+         n_tvlog_reclaimed_bytes = 24414329856
+              n_tvlog_ckpt_bytes = 32224933632
+                 n_oplog_reclaim = 6846
+           n_oplog_reclaimed_ops = 2454886
+         n_oplog_reclaimed_bytes = 157112704
+           n_oplog_written_bytes = 191891136
+           n_ckptlog_best_effort = 6403
+             n_ckptlog_writeback = 6595
+       n_ckptlog_reclaimed_bytes = 17186456960
+       n_ckptlog_writeback_bytes = 153475868
+                     n_qp_detect = 9044
+                        n_qp_nap = 7818
+-------------------------------------------------
+run Btree WA  2M keys num thread 32
+BtreeTSS, workloada, randint, zipfian, threads 32
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0197585 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 0	3.15904 ops/usec
+t_failed_reads= 0	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 15913605
+                        n_finish = 4000000
+                        n_aborts = 11913605
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 21612
+                    n_tvlog_ckpt = 14031
+     n_tvlog_cpobj_written_bytes = 24107901952
+           n_tvlog_written_bytes = 24477352512
+         n_tvlog_reclaimed_bytes = 24477352512
+              n_tvlog_ckpt_bytes = 30216693744
+                 n_oplog_reclaim = 7857
+           n_oplog_reclaimed_ops = 2557351
+         n_oplog_reclaimed_bytes = 163670464
+           n_oplog_written_bytes = 191891968
+           n_ckptlog_best_effort = 6257
+             n_ckptlog_writeback = 6396
+       n_ckptlog_reclaimed_bytes = 16115404416
+       n_ckptlog_writeback_bytes = 125341708
+                     n_qp_detect = 7160
+                        n_qp_nap = 6250
+-------------------------------------------------
+run Btree WA  2M keys num thread 40
+BtreeTSS, workloada, randint, zipfian, threads 40
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.021143 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 0	3.61607 ops/usec
+t_failed_reads= 1	t_failed_updates= 2
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 19607921
+                        n_finish = 4000000
+                        n_aborts = 15607921
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 23873
+                    n_tvlog_ckpt = 16179
+     n_tvlog_cpobj_written_bytes = 24059884352
+           n_tvlog_written_bytes = 24427526272
+         n_tvlog_reclaimed_bytes = 24427526272
+              n_tvlog_ckpt_bytes = 29779827816
+                 n_oplog_reclaim = 8708
+           n_oplog_reclaimed_ops = 2744043
+         n_oplog_reclaimed_bytes = 175618752
+           n_oplog_written_bytes = 191891840
+           n_ckptlog_best_effort = 7224
+             n_ckptlog_writeback = 7502
+       n_ckptlog_reclaimed_bytes = 15882406336
+       n_ckptlog_writeback_bytes = 130144760
+                     n_qp_detect = 4839
+                        n_qp_nap = 3945
+-------------------------------------------------
+run Btree WA  2M keys num thread 48
+BtreeTSS, workloada, randint, zipfian, threads 48
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0267177 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 0	4.30876 ops/usec
+t_failed_reads= 16	t_failed_updates= 13
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 22820863
+                        n_finish = 3999936
+                        n_aborts = 18820927
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 20533
+                    n_tvlog_ckpt = 16151
+     n_tvlog_cpobj_written_bytes = 24050840576
+           n_tvlog_written_bytes = 24413495296
+         n_tvlog_reclaimed_bytes = 24413495296
+              n_tvlog_ckpt_bytes = 28247213304
+                 n_oplog_reclaim = 9059
+           n_oplog_reclaimed_ops = 1986523
+         n_oplog_reclaimed_bytes = 127137472
+           n_oplog_written_bytes = 191888128
+           n_ckptlog_best_effort = 6781
+             n_ckptlog_writeback = 7692
+       n_ckptlog_reclaimed_bytes = 15065026624
+       n_ckptlog_writeback_bytes = 114940656
+                     n_qp_detect = 3347
+                        n_qp_nap = 2612
+-------------------------------------------------
+####################################
+####################################
+Evaluation Btree 2M, WB 
+run Btree WB  2M keys num thread 1
+BtreeTSS, workloadb, randint, zipfian, threads 1
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.00871228 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 1	0.171105 ops/usec
+t_failed_reads= 82	t_failed_updates= 4
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 4000009
+                        n_finish = 4000000
+                        n_aborts = 9
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 15108
+                    n_tvlog_ckpt = 10538
+     n_tvlog_cpobj_written_bytes = 23968128576
+           n_tvlog_written_bytes = 24236969216
+         n_tvlog_reclaimed_bytes = 24236969216
+              n_tvlog_ckpt_bytes = 43541916192
+                 n_oplog_reclaim = 29
+           n_oplog_reclaimed_ops = 2087162
+         n_oplog_reclaimed_bytes = 133579328
+           n_oplog_written_bytes = 134427456
+           n_ckptlog_best_effort = 4193
+             n_ckptlog_writeback = 6296
+       n_ckptlog_reclaimed_bytes = 23222116800
+       n_ckptlog_writeback_bytes = 1900833284
+                     n_qp_detect = 62696
+                        n_qp_nap = 42174
+-------------------------------------------------
+run Btree WB  2M keys num thread 4
+run Btree WB  2M keys num thread 8
+BtreeTSS, workloadb, randint, zipfian, threads 8
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0223077 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 1	1.35901 ops/usec
+t_failed_reads= 24	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 5186796
+                        n_finish = 4000000
+                        n_aborts = 1186796
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 12548
+                    n_tvlog_ckpt = 11980
+     n_tvlog_cpobj_written_bytes = 23968316224
+           n_tvlog_written_bytes = 24234177280
+         n_tvlog_reclaimed_bytes = 24234177280
+              n_tvlog_ckpt_bytes = 38649141456
+                 n_oplog_reclaim = 2756
+           n_oplog_reclaimed_ops = 1998198
+         n_oplog_reclaimed_bytes = 127885184
+           n_oplog_written_bytes = 134427264
+           n_ckptlog_best_effort = 3492
+             n_ckptlog_writeback = 8149
+       n_ckptlog_reclaimed_bytes = 20612661312
+       n_ckptlog_writeback_bytes = 608652312
+                     n_qp_detect = 9340
+                        n_qp_nap = 6378
+-------------------------------------------------
+run Btree WB  2M keys num thread 16
+BtreeTSS, workloadb, randint, zipfian, threads 16
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0200007 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 1	2.47721 ops/usec
+t_failed_reads= 0	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 7518679
+                        n_finish = 4000000
+                        n_aborts = 3518679
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 21972
+                    n_tvlog_ckpt = 13793
+     n_tvlog_cpobj_written_bytes = 23983803392
+           n_tvlog_written_bytes = 24246085440
+         n_tvlog_reclaimed_bytes = 24246085440
+              n_tvlog_ckpt_bytes = 35261911872
+                 n_oplog_reclaim = 5167
+           n_oplog_reclaimed_ops = 1996022
+         n_oplog_reclaimed_bytes = 127745408
+           n_oplog_written_bytes = 134426752
+           n_ckptlog_best_effort = 5689
+             n_ckptlog_writeback = 7400
+       n_ckptlog_reclaimed_bytes = 18806159936
+       n_ckptlog_writeback_bytes = 240122416
+                     n_qp_detect = 9588
+                        n_qp_nap = 7779
+-------------------------------------------------
+run Btree WB  2M keys num thread 24
+BtreeTSS, workloadb, randint, zipfian, threads 24
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0195781 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 1	2.99069 ops/usec
+t_failed_reads= 3	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 11149436
+                        n_finish = 3999984
+                        n_aborts = 7149452
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 22675
+                    n_tvlog_ckpt = 13915
+     n_tvlog_cpobj_written_bytes = 23978316032
+           n_tvlog_written_bytes = 24236599296
+         n_tvlog_reclaimed_bytes = 24236599296
+              n_tvlog_ckpt_bytes = 31924790040
+                 n_oplog_reclaim = 6885
+           n_oplog_reclaimed_ops = 1993796
+         n_oplog_reclaimed_bytes = 127602944
+           n_oplog_written_bytes = 134426240
+           n_ckptlog_best_effort = 6402
+             n_ckptlog_writeback = 6504
+       n_ckptlog_reclaimed_bytes = 17026375232
+       n_ckptlog_writeback_bytes = 145995268
+                     n_qp_detect = 9574
+                        n_qp_nap = 8374
+-------------------------------------------------
+run Btree WB  2M keys num thread 32
+BtreeTSS, workloadb, randint, zipfian, threads 32
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0194722 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 1	3.46962 ops/usec
+t_failed_reads= 0	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 16522832
+                        n_finish = 4000000
+                        n_aborts = 12522832
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 21979
+                    n_tvlog_ckpt = 14078
+     n_tvlog_cpobj_written_bytes = 24031620416
+           n_tvlog_written_bytes = 24287148800
+         n_tvlog_reclaimed_bytes = 24287148800
+              n_tvlog_ckpt_bytes = 30017819520
+                 n_oplog_reclaim = 7828
+           n_oplog_reclaimed_ops = 1991143
+         n_oplog_reclaimed_bytes = 127433152
+           n_oplog_written_bytes = 134426752
+           n_ckptlog_best_effort = 6454
+             n_ckptlog_writeback = 6415
+       n_ckptlog_reclaimed_bytes = 16009338560
+       n_ckptlog_writeback_bytes = 121506900
+                     n_qp_detect = 7630
+                        n_qp_nap = 6648
+-------------------------------------------------
+run Btree WB  2M keys num thread 40
+BtreeTSS, workloadb, randint, zipfian, threads 40
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0219182 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 1	4.40318 ops/usec
+t_failed_reads= 6	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 19321846
+                        n_finish = 4000000
+                        n_aborts = 15321846
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 22755
+                    n_tvlog_ckpt = 16131
+     n_tvlog_cpobj_written_bytes = 24030445952
+           n_tvlog_written_bytes = 24283090176
+         n_tvlog_reclaimed_bytes = 24283090176
+              n_tvlog_ckpt_bytes = 29868151392
+                 n_oplog_reclaim = 8581
+           n_oplog_reclaimed_ops = 1990054
+         n_oplog_reclaimed_bytes = 127363456
+           n_oplog_written_bytes = 134426752
+           n_ckptlog_best_effort = 7014
+             n_ckptlog_writeback = 7681
+       n_ckptlog_reclaimed_bytes = 15929512512
+       n_ckptlog_writeback_bytes = 127538304
+                     n_qp_detect = 4136
+                        n_qp_nap = 3240
+-------------------------------------------------
+run Btree WB  2M keys num thread 48
+BtreeTSS, workloadb, randint, zipfian, threads 48
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0229025 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 1	4.44914 ops/usec
+t_failed_reads= 23	t_failed_updates= 1
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 23905750
+                        n_finish = 3999936
+                        n_aborts = 19905814
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 18877
+                    n_tvlog_ckpt = 15067
+     n_tvlog_cpobj_written_bytes = 23999372928
+           n_tvlog_written_bytes = 24250252864
+         n_tvlog_reclaimed_bytes = 24250252864
+              n_tvlog_ckpt_bytes = 27251225448
+                 n_oplog_reclaim = 8883
+           n_oplog_reclaimed_ops = 1986675
+         n_oplog_reclaimed_bytes = 127147200
+           n_oplog_written_bytes = 134424512
+           n_ckptlog_best_effort = 6390
+             n_ckptlog_writeback = 6974
+       n_ckptlog_reclaimed_bytes = 14533834880
+       n_ckptlog_writeback_bytes = 103441388
+                     n_qp_detect = 3048
+                        n_qp_nap = 2404
+-------------------------------------------------
+####################################
+####################################
+Evaluation Btree 2M, WC 
+run Btree WB  2M keys num thread 1
+BtreeTSS, workloadc, randint, zipfian, threads 1
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.00874236 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 2	0.176197 ops/usec
+t_failed_reads= 34	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 6000007
+                        n_finish = 6000000
+                        n_aborts = 7
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 15331
+                    n_tvlog_ckpt = 10462
+     n_tvlog_cpobj_written_bytes = 23961411136
+           n_tvlog_written_bytes = 24217401472
+         n_tvlog_reclaimed_bytes = 24217401472
+              n_tvlog_ckpt_bytes = 43505736648
+                 n_oplog_reclaim = 26
+           n_oplog_reclaimed_ops = 1999853
+         n_oplog_reclaimed_bytes = 127991552
+           n_oplog_written_bytes = 128000960
+           n_ckptlog_best_effort = 4346
+             n_ckptlog_writeback = 6072
+       n_ckptlog_reclaimed_bytes = 23202820224
+       n_ckptlog_writeback_bytes = 1899228984
+                     n_qp_detect = 67517
+                        n_qp_nap = 47201
+-------------------------------------------------
+run Btree WB  2M keys num thread 4
+run Btree WB  2M keys num thread 8
+run Btree WB  2M keys num thread 16
+BtreeTSS, workloadc, randint, zipfian, threads 16
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0199816 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 2	2.49056 ops/usec
+t_failed_reads= 6	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 9557419
+                        n_finish = 6000000
+                        n_aborts = 3557419
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 21053
+                    n_tvlog_ckpt = 13658
+     n_tvlog_cpobj_written_bytes = 23953552384
+           n_tvlog_written_bytes = 24203670656
+         n_tvlog_reclaimed_bytes = 24203670656
+              n_tvlog_ckpt_bytes = 35137459296
+                 n_oplog_reclaim = 5175
+           n_oplog_reclaimed_ops = 1996407
+         n_oplog_reclaimed_bytes = 127770048
+           n_oplog_written_bytes = 128000000
+           n_ckptlog_best_effort = 5572
+             n_ckptlog_writeback = 7354
+       n_ckptlog_reclaimed_bytes = 18739782848
+       n_ckptlog_writeback_bytes = 238868768
+                     n_qp_detect = 9092
+                        n_qp_nap = 7286
+-------------------------------------------------
+run Btree WB  2M keys num thread 24
+BtreeTSS, workloadc, randint, zipfian, threads 24
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0200231 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 2	3.05106 ops/usec
+t_failed_reads= 10	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 13295627
+                        n_finish = 5999976
+                        n_aborts = 7295651
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 22662
+                    n_tvlog_ckpt = 13922
+     n_tvlog_cpobj_written_bytes = 24007878080
+           n_tvlog_written_bytes = 24252610816
+         n_tvlog_reclaimed_bytes = 24252610816
+              n_tvlog_ckpt_bytes = 32004279288
+                 n_oplog_reclaim = 6927
+           n_oplog_reclaimed_ops = 1993234
+         n_oplog_reclaimed_bytes = 127566976
+           n_oplog_written_bytes = 127999488
+           n_ckptlog_best_effort = 6507
+             n_ckptlog_writeback = 6395
+       n_ckptlog_reclaimed_bytes = 17068773248
+       n_ckptlog_writeback_bytes = 146185060
+                     n_qp_detect = 9963
+                        n_qp_nap = 8753
+-------------------------------------------------
+run Btree WB  2M keys num thread 32
+BtreeTSS, workloadc, randint, zipfian, threads 32
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0197662 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 2	3.87243 ops/usec
+t_failed_reads= 152	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 18000562
+                        n_finish = 6000000
+                        n_aborts = 12000562
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 22149
+                    n_tvlog_ckpt = 14051
+     n_tvlog_cpobj_written_bytes = 24039375040
+           n_tvlog_written_bytes = 24281522688
+         n_tvlog_reclaimed_bytes = 24281522688
+              n_tvlog_ckpt_bytes = 30279794256
+                 n_oplog_reclaim = 7848
+           n_oplog_reclaimed_ops = 1990141
+         n_oplog_reclaimed_bytes = 127369024
+           n_oplog_written_bytes = 128000000
+           n_ckptlog_best_effort = 6309
+             n_ckptlog_writeback = 6426
+       n_ckptlog_reclaimed_bytes = 16149059072
+       n_ckptlog_writeback_bytes = 127068712
+                     n_qp_detect = 7405
+                        n_qp_nap = 6477
+-------------------------------------------------
+run Btree WB  2M keys num thread 40
+BtreeTSS, workloadc, randint, zipfian, threads 40
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0199249 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 2	3.69868 ops/usec
+t_failed_reads= 0	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 24171430
+                        n_finish = 6000000
+                        n_aborts = 18171430
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 20706
+                    n_tvlog_ckpt = 14515
+     n_tvlog_cpobj_written_bytes = 24039233536
+           n_tvlog_written_bytes = 24279933248
+         n_tvlog_reclaimed_bytes = 24279933248
+              n_tvlog_ckpt_bytes = 28796772000
+                 n_oplog_reclaim = 8327
+           n_oplog_reclaimed_ops = 1990732
+         n_oplog_reclaimed_bytes = 127406848
+           n_oplog_written_bytes = 128000000
+           n_ckptlog_best_effort = 6304
+             n_ckptlog_writeback = 6700
+       n_ckptlog_reclaimed_bytes = 15358120000
+       n_ckptlog_writeback_bytes = 116332032
+                     n_qp_detect = 4663
+                        n_qp_nap = 3908
+-------------------------------------------------
+run Btree WB  2M keys num thread 48
+BtreeTSS, workloadc, randint, zipfian, threads 48
+Warming up BtreeTSS with key inserts..
+throughput: load, 0.0226084 ops/usec
+Waiting for logs to  drain..
+Logs drained.. 
+==============================
+throughput: run, 2	4.90239 ops/usec
+t_failed_reads= 192	t_failed_updates= 0
+==============================
+=================================================
+TimeStone configuration:
+-------------------------------------------------
+[32m  TS_ORDO_TIMESTAMPING = 1
+[0m[32m  TS_TVLOG_SIZE = 8388608
+[0m[32m  TS_TVLOG_LOW_MARK = 4194304
+[0m[32m  TS_TVLOG_HIGH_MARK = 6291456
+[0m[32m  TS_OPLOG_SIZE = 8388608
+[0m[32m  TS_CKPTLOG_SIZE = 33554432
+[0m[31m  TS_ENABLE_STATS is on.           DO NOT USE FOR BENCHMARK!
+[0m-------------------------------------------------
+TimeStone statistics:
+-------------------------------------------------
+                        n_starts = 26766078
+                        n_finish = 5999904
+                        n_aborts = 20766174
+             n_aborts_validation = 0
+           n_flush_new_act_bytes = 0
+           n_alloc_act_obj_bytes = 0
+             n_tvlog_best_effort = 21849
+                    n_tvlog_ckpt = 16187
+     n_tvlog_cpobj_written_bytes = 23993066240
+           n_tvlog_written_bytes = 24231919168
+         n_tvlog_reclaimed_bytes = 24231919168
+              n_tvlog_ckpt_bytes = 27793048632
+                 n_oplog_reclaim = 9189
+           n_oplog_reclaimed_ops = 1988194
+         n_oplog_reclaimed_bytes = 127244416
+           n_oplog_written_bytes = 127997952
+           n_ckptlog_best_effort = 7105
+             n_ckptlog_writeback = 7327
+       n_ckptlog_reclaimed_bytes = 14822802688
+       n_ckptlog_writeback_bytes = 103447444
+                     n_qp_detect = 3244
+                        n_qp_nap = 2544
+-------------------------------------------------
+####################################
+####################################
+Evaluation Btree 2M, WD 
+run Btree WD  2M keys num thread 1
